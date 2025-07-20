@@ -1,7 +1,5 @@
 # Chào mừng các Lương y đến với Tương Lai
 
-![Hành trình kết nối](../../images/chapter-1/1.1-harmony-bridge.jpg)
-
 > **Hôm nay, chúng ta sẽ bắc một cây cầu vững chắc nối liền tri thức ngàn năm với tương lai.**
 
 ## 🌉 **Hành trình kết nối:**

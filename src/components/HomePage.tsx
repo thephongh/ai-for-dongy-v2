@@ -32,7 +32,17 @@ const HomePage: React.FC = () => {
   return (
     <div style={{ minHeight: '100vh' }}>
       {/* Hero Section */}
-      <section className="gradient-primary" style={{ padding: '6rem 0', color: 'white' }}>
+      <section 
+        className="gradient-primary" 
+        style={{ 
+          padding: '6rem 0', 
+          color: 'white',
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/chapter-1/1.1-harmony-bridge.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
         <div className="container" style={{ textAlign: 'center' }}>
           <h1 className="hero-text" style={{ marginBottom: '1.5rem' }}>
             Khóa Học AI cho Lương Y
