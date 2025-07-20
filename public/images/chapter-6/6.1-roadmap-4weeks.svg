@@ -1,0 +1,199 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgRoadmap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dbeafe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="roadGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgRoadmap)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e40af">
+    Lộ trình 4 tuần để trở thành "Lương y 4.0"
+  </text>
+  
+  <!-- Road path -->
+  <path d="M 50 200 Q 250 150, 400 200 Q 550 250, 750 200" 
+        stroke="url(#roadGradient)" 
+        stroke-width="60" 
+        fill="none"/>
+  
+  <!-- Road marking -->
+  <path d="M 50 200 Q 250 150, 400 200 Q 550 250, 750 200" 
+        stroke="white" 
+        stroke-width="4" 
+        stroke-dasharray="20,10"
+        fill="none"/>
+  
+  <!-- Week 1: Khám phá -->
+  <g transform="translate(80, 120)">
+    <circle cx="0" cy="80" r="40" fill="#ef4444" stroke="white" stroke-width="4"/>
+    <text x="0" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">
+      TUẦN 1
+    </text>
+    <text x="0" y="88" text-anchor="middle" font-family="Arial" font-size="20" fill="white">🔍</text>
+    
+    <!-- Week 1 details -->
+    <rect x="-80" y="-70" width="160" height="80" rx="10" fill="white" stroke="#ef4444" stroke-width="2"/>
+    <text x="0" y="-50" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#dc2626">
+      Khám phá
+    </text>
+    <text x="0" y="-30" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      15 phút/ngày làm quen AI
+    </text>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      Hỏi câu hỏi đơn giản
+    </text>
+    <text x="0" y="0" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      Không ngại thử nghiệm
+    </text>
+  </g>
+  
+  <!-- Week 2: Ứng dụng -->
+  <g transform="translate(280, 100)">
+    <circle cx="0" cy="80" r="40" fill="#f59e0b" stroke="white" stroke-width="4"/>
+    <text x="0" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">
+      TUẦN 2
+    </text>
+    <text x="0" y="88" text-anchor="middle" font-family="Arial" font-size="20" fill="white">⚡</text>
+    
+    <!-- Week 2 details -->
+    <rect x="-80" y="-70" width="160" height="80" rx="10" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <text x="0" y="-50" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#d97706">
+      Ứng dụng
+    </text>
+    <text x="0" y="-30" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      AI viết bài, soạn email
+    </text>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      Tiết kiệm 1 giờ/tuần
+    </text>
+    <text x="0" y="0" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      Tối ưu công việc giấy tờ
+    </text>
+  </g>
+  
+  <!-- Week 3: Tích hợp -->
+  <g transform="translate(480, 120)">
+    <circle cx="0" cy="80" r="40" fill="#10b981" stroke="white" stroke-width="4"/>
+    <text x="0" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">
+      TUẦN 3
+    </text>
+    <text x="0" y="88" text-anchor="middle" font-family="Arial" font-size="20" fill="white">🔗</text>
+    
+    <!-- Week 3 details -->
+    <rect x="-80" y="-70" width="160" height="80" rx="10" fill="white" stroke="#10b981" stroke-width="2"/>
+    <text x="0" y="-50" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#059669">
+      Tích hợp
+    </text>
+    <text x="0" y="-30" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      AI tham khảo ca bệnh
+    </text>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      Thói quen đối chiếu
+    </text>
+    <text x="0" y="0" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      An toàn và có trách nhiệm
+    </text>
+  </g>
+  
+  <!-- Week 4: Sáng tạo -->
+  <g transform="translate(680, 100)">
+    <circle cx="0" cy="80" r="40" fill="#8b5cf6" stroke="white" stroke-width="4"/>
+    <text x="0" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">
+      TUẦN 4
+    </text>
+    <text x="0" y="88" text-anchor="middle" font-family="Arial" font-size="20" fill="white">🎨</text>
+    
+    <!-- Week 4 details -->
+    <rect x="-80" y="-70" width="160" height="80" rx="10" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="0" y="-50" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#7c3aed">
+      Sáng tạo
+    </text>
+    <text x="0" y="-30" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      Xây 3 prompt "tủ"
+    </text>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      Cá nhân hóa AI
+    </text>
+    <text x="0" y="0" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      Trở thành trợ lý riêng
+    </text>
+  </g>
+  
+  <!-- Progress arrows -->
+  <path d="M 140 200 L 220 180" stroke="#374151" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 340 180 L 420 200" stroke="#374151" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 540 200 L 620 180" stroke="#374151" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Achievement banner -->
+  <g transform="translate(100, 320)">
+    <rect x="0" y="0" width="600" height="100" rx="15" fill="#fef3c7" stroke="#f59e0b" stroke-width="3"/>
+    <text x="300" y="30" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#92400e">
+      🎯 Mục tiêu sau 4 tuần
+    </text>
+    <text x="300" y="55" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f">
+      Trở thành lương y biết tận dụng AI một cách hiệu quả và an toàn
+    </text>
+    <text x="300" y="75" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f">
+      Tăng năng suất làm việc 3x, giảm 70% thời gian công việc giấy tờ
+    </text>
+    <text x="300" y="95" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#78350f">
+      Sẵn sàng cho tương lai y học số hóa!
+    </text>
+  </g>
+  
+  <!-- Success metrics -->
+  <g transform="translate(100, 450)">
+    <rect x="0" y="0" width="600" height="120" rx="15" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#15803d">
+      📊 Các chỉ số thành công đo được
+    </text>
+    
+    <!-- Metric 1 -->
+    <g transform="translate(50, 45)">
+      <circle cx="25" cy="25" r="20" fill="#22c55e"/>
+      <text x="25" y="32" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">3x</text>
+      <text x="25" y="55" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">Tăng hiệu quả</text>
+      <text x="25" y="70" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">làm việc</text>
+    </g>
+    
+    <!-- Metric 2 -->
+    <g transform="translate(200, 45)">
+      <circle cx="25" cy="25" r="20" fill="#3b82f6"/>
+      <text x="25" y="32" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">70%</text>
+      <text x="25" y="55" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">Giảm thời gian</text>
+      <text x="25" y="70" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">giấy tờ</text>
+    </g>
+    
+    <!-- Metric 3 -->
+    <g transform="translate(350, 45)">
+      <circle cx="25" cy="25" r="20" fill="#f59e0b"/>
+      <text x="25" y="32" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">50%</text>
+      <text x="25" y="55" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">Tăng sự hài lòng</text>
+      <text x="25" y="70" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">bệnh nhân</text>
+    </g>
+    
+    <!-- Metric 4 -->
+    <g transform="translate(500, 45)">
+      <circle cx="25" cy="25" r="20" fill="#8b5cf6"/>
+      <text x="25" y="32" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">100%</text>
+      <text x="25" y="55" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">Sẵn sàng cho</text>
+      <text x="25" y="70" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">tương lai</text>
+    </g>
+  </g>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0 0, 8 4, 0 8" fill="#374151"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,21 @@
+<!-- Illustration 4.1: Luồng làm việc an toàn với AI trong chẩn đoán -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+    <defs>
+        <style>.cls-1{fill:#8b5e34;}.cls-2{fill:#a07e58;}.cls-3{font-size:12px;font-family:sans-serif;}.cls-4{fill:#fff;}</style>
+    </defs>
+    <rect class="cls-1" x="20" y="50" width="70" height="70" rx="10"/>
+    <text class="cls-3 cls-4" x="35" y="85">Lương y</text>
+    <text class="cls-3 cls-4" x="38" y="100">Bước 1</text>
+    <path class="cls-2" d="M95,85h20l10-10v20l-10-10h-20Z"/>
+    <rect class="cls-2" x="130" y="50" width="70" height="70" rx="10"/>
+    <text class="cls-3 cls-4" x="155" y="85">AI</text>
+    <text class="cls-3 cls-4" x="148" y="100">Bước 2</text>
+    <path class="cls-1" d="M205,85h20l10-10v20l-10-10h-20Z"/>
+    <rect class="cls-1" x="240" y="50" width="70" height="70" rx="10"/>
+    <text class="cls-3 cls-4" x="255" y="85">Lương y</text>
+    <text class="cls-3 cls-4" x="258" y="100">Bước 3</text>
+    <path class="cls-2" d="M315,85h20l10-10v20l-10-10h-20Z"/>
+    <rect class="cls-1" x="350" y="50" width="70" height="70" rx="10" stroke="#c44536" stroke-width="2"/>
+    <text class="cls-3 cls-4" x="365" y="85">Lương y</text>
+    <text class="cls-3 cls-4" x="368" y="100">Bước 4</text>
+</svg>

@@ -1,0 +1,303 @@
+/* Design System CSS Variables */
+:root {
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #6B46C1 0%, #7C3AED 15%, #8B5CF6 30%, #EC4899 45%, #F97316 60%, #EAB308 75%, #22C55E 90%, #06B6D4 100%);
+  --gradient-secondary: linear-gradient(135deg, #8B5A2B 0%, #D97706 25%, #F59E0B 50%, #EF4444 75%, #7C2D12 100%);
+  --gradient-progress: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+  --gradient-step-number: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+  --gradient-feature-icon: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+  --gradient-overview-icon: linear-gradient(135deg, #3B82F6 0%, #10B981 100%);
+  
+  /* Solid Colors */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-gray-100: #F9FAFB;
+  --color-gray-200: #F3F4F6;
+  --color-gray-300: #E5E7EB;
+  --color-gray-500: #6B7280;
+  --color-gray-700: #374151;
+  --color-gray-900: #111827;
+  
+  /* Accent Colors */
+  --color-purple: #8B5CF6;
+  --color-green: #10B981;
+  --color-yellow: #F59E0B;
+  --color-blue: #3B82F6;
+  
+  /* Typography */
+  --font-primary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Typography Sizes */
+  --text-hero-size: clamp(3rem, 8vw, 6rem);
+  --text-h2-size: clamp(2rem, 5vw, 3.5rem);
+  --text-h3-size: 1.5rem;
+  --text-h4-size: 1.125rem;
+  --text-body-size: 1.125rem;
+  --text-body-small-size: 1rem;
+  --text-caption-size: 0.875rem;
+  
+  /* Navigation */
+  --nav-bg: #FFFFFF;
+  --nav-border: rgba(229, 231, 235, 0.3);
+  --nav-padding: 1rem 2rem;
+  
+  /* Buttons */
+  --btn-primary-bg: #000000;
+  --btn-primary-color: #FFFFFF;
+  --btn-primary-hover-bg: #1F2937;
+  --btn-secondary-bg: rgba(255, 255, 255, 0.1);
+  --btn-secondary-color: #FFFFFF;
+  --btn-secondary-border: rgba(255, 255, 255, 0.2);
+  --btn-secondary-hover-bg: rgba(255, 255, 255, 0.2);
+  --btn-secondary-hover-border: rgba(255, 255, 255, 0.4);
+  
+  /* Cards */
+  --card-bg: #FFFFFF;
+  --card-border: #E5E7EB;
+  --card-border-radius: 1rem;
+  --card-padding: 2rem;
+  --card-hover-border: #8B5CF6;
+  --card-hover-shadow: 0 8px 25px rgba(139, 92, 246, 0.15);
+  --card-completed-border: #10B981;
+  --card-completed-bg: linear-gradient(135deg, #ECFDF5 0%, #F0FDF4 100%);
+  --card-current-border: #F59E0B;
+  --card-current-bg: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+  
+  /* Responsive */
+  --breakpoint-tablet: 768px;
+}
+
+/* Global Typography Styles */
+.hero-text {
+  font-size: var(--text-hero-size);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--color-white);
+}
+
+.h2-text {
+  font-size: var(--text-h2-size);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-black);
+}
+
+.h3-text {
+  font-size: var(--text-h3-size);
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.h4-text {
+  font-size: var(--text-h4-size);
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.body-text {
+  font-size: var(--text-body-size);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-gray-500);
+}
+
+.body-small-text {
+  font-size: var(--text-body-small-size);
+  line-height: 1.6;
+  color: var(--color-gray-500);
+}
+
+.caption-text {
+  font-size: var(--text-caption-size);
+  color: var(--color-gray-500);
+}
+
+/* Navigation Styles */
+.navigation {
+  background: var(--nav-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--nav-border);
+  padding: var(--nav-padding);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  color: var(--color-black);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: var(--color-gray-500);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-black);
+}
+
+/* Button Styles */
+.btn-primary {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background: var(--btn-primary-hover-bg);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--btn-secondary-bg);
+  color: var(--btn-secondary-color);
+  border: 2px solid var(--btn-secondary-border);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-secondary:hover {
+  background: var(--btn-secondary-hover-bg);
+  border-color: var(--btn-secondary-hover-border);
+}
+
+/* Card Styles */
+.card-step {
+  background: var(--card-bg);
+  border: 2px solid var(--card-border);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card-step:hover {
+  border-color: var(--card-hover-border);
+  box-shadow: var(--card-hover-shadow);
+  transform: translateY(-2px);
+}
+
+.card-step.completed {
+  border-color: var(--card-completed-border);
+  background: var(--card-completed-bg);
+}
+
+.card-step.current {
+  border-color: var(--card-current-border);
+  background: var(--card-current-bg);
+}
+
+.card-preview {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-border-radius);
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card-preview:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.card-feature {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(229, 231, 235, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.card-feature:hover {
+  transform: translateY(-4px);
+}
+
+.card-overview {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-border-radius);
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card-overview:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Gradient Utilities */
+.gradient-primary {
+  background: var(--gradient-primary);
+}
+
+.gradient-secondary {
+  background: var(--gradient-secondary);
+}
+
+.gradient-progress {
+  background: var(--gradient-progress);
+}
+
+.gradient-step-number {
+  background: var(--gradient-step-number);
+}
+
+.gradient-feature-icon {
+  background: var(--gradient-feature-icon);
+}
+
+.gradient-overview-icon {
+  background: var(--gradient-overview-icon);
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  color: var(--color-gray-700);
+  background-color: var(--color-gray-100);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}

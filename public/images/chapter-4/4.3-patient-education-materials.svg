@@ -1,0 +1,238 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="leafletBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1e40af"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b">AI Tạo Tài Liệu Giáo Dục Bệnh Nhân</text>
+  
+  <!-- AI Brain generating content -->
+  <g transform="translate(50, 80)">
+    <ellipse cx="60" cy="50" rx="40" ry="35" fill="url(#aiGradient)"/>
+    <circle cx="45" cy="40" r="4" fill="#fbbf24"/>
+    <circle cx="75" cy="40" r="4" fill="#fbbf24"/>
+    <circle cx="50" cy="55" r="3" fill="#fbbf24"/>
+    <circle cx="70" cy="55" r="3" fill="#fbbf24"/>
+    <circle cx="60" cy="65" r="3" fill="#fbbf24"/>
+    
+    <!-- Neural connections -->
+    <path d="M45 40 L60 65 M75 40 L60 65 M50 55 L70 55" stroke="#22d3ee" stroke-width="1" opacity="0.7"/>
+    
+    <text x="60" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af">AI Generator</text>
+  </g>
+  
+  <!-- Generation arrow -->
+  <path d="M150 130 L200 130" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+  
+  <!-- Patient education leaflet 1: Diet for liver problems -->
+  <g transform="translate(220, 80)">
+    <rect x="0" y="0" width="160" height="220" fill="url(#leafletBg)" stroke="#e2e8f0" stroke-width="2" rx="8"/>
+    
+    <!-- Header -->
+    <rect x="5" y="5" width="150" height="40" fill="#dc2626" rx="5"/>
+    <text x="80" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Chế Độ Ăn</text>
+    <text x="80" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Bệnh Gan</text>
+    
+    <!-- Content sections -->
+    <text x="10" y="65" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">✓ NÊN ĂN:</text>
+    
+    <!-- Good foods icons -->
+    <g transform="translate(10, 75)">
+      <!-- Green vegetables -->
+      <ellipse cx="15" cy="10" rx="8" ry="6" fill="#22c55e"/>
+      <path d="M15 4 L15 16 M10 8 Q15 6 20 8" stroke="#166534" stroke-width="1"/>
+      <text x="15" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#166534">Rau xanh</text>
+      
+      <!-- Fish -->
+      <ellipse cx="60" cy="10" rx="10" ry="5" fill="#0ea5e9"/>
+      <circle cx="65" cy="10" r="1" fill="#0f172a"/>
+      <path d="M50 10 L45 7 L45 13 Z" fill="#0ea5e9"/>
+      <text x="60" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#0c4a6e">Cá</text>
+      
+      <!-- Fruits -->
+      <circle cx="105" cy="10" r="6" fill="#f59e0b"/>
+      <rect x="103" y="4" width="4" height="3" fill="#22c55e"/>
+      <text x="105" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#92400e">Trái cây</text>
+    </g>
+    
+    <text x="10" y="115" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">✗ TRÁNH:</text>
+    
+    <!-- Bad foods icons -->
+    <g transform="translate(10, 125)">
+      <!-- Alcohol -->
+      <rect x="10" y="5" width="8" height="12" fill="#7c2d12" rx="2"/>
+      <circle cx="14" cy="8" r="2" fill="#fbbf24"/>
+      <text x="14" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#7c2d12">Rượu</text>
+      
+      <!-- Fried food -->
+      <ellipse cx="60" cy="10" rx="8" ry="5" fill="#fbbf24"/>
+      <circle cx="55" cy="8" r="1" fill="#92400e"/>
+      <circle cx="65" cy="12" r="1" fill="#92400e"/>
+      <text x="60" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#92400e">Đồ chiên</text>
+      
+      <!-- Spicy food -->
+      <ellipse cx="105" cy="10" rx="4" ry="8" fill="#dc2626"/>
+      <path d="M105 2 L105 18" stroke="#7f1d1d" stroke-width="1"/>
+      <text x="105" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#7c2d12">Cay nóng</text>
+    </g>
+    
+    <!-- Tips section -->
+    <text x="10" y="165" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#7c3aed">💡 LƯU Ý:</text>
+    <text x="10" y="180" font-family="Arial, sans-serif" font-size="9" fill="#1e293b">• Ăn nhiều bữa nhỏ</text>
+    <text x="10" y="195" font-family="Arial, sans-serif" font-size="9" fill="#1e293b">• Uống đủ nước</text>
+    <text x="10" y="210" font-family="Arial, sans-serif" font-size="9" fill="#1e293b">• Hạn chế muối</text>
+  </g>
+  
+  <!-- Patient education leaflet 2: Exercise guide -->
+  <g transform="translate(420, 80)">
+    <rect x="0" y="0" width="160" height="220" fill="url(#leafletBg)" stroke="#e2e8f0" stroke-width="2" rx="8"/>
+    
+    <!-- Header -->
+    <rect x="5" y="5" width="150" height="40" fill="#059669" rx="5"/>
+    <text x="80" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Bài Tập</text>
+    <text x="80" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Đau Lưng</text>
+    
+    <!-- Exercise illustrations -->
+    <g transform="translate(20, 60)">
+      <!-- Exercise 1: Stretching -->
+      <text x="60" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#065f46">1. Duỗi lưng (5 phút)</text>
+      
+      <!-- Stick figure stretching -->
+      <g transform="translate(40, 25)">
+        <circle cx="20" cy="8" r="6" fill="#fbbf24"/>
+        <path d="M20 14 L20 35 M15 20 Q25 15 35 25 M15 40 L20 35 L25 40" stroke="#1f2937" stroke-width="2" fill="none"/>
+        <path d="M5 25 Q20 20 35 25" stroke="#dc2626" stroke-width="2" fill="none" stroke-dasharray="2,2"/>
+      </g>
+      
+      <!-- Exercise 2: Walking -->
+      <text x="60" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#065f46">2. Đi bộ nhẹ (15 phút)</text>
+      
+      <!-- Walking figure -->
+      <g transform="translate(40, 95)">
+        <circle cx="20" cy="8" r="6" fill="#fbbf24"/>
+        <path d="M20 14 L20 30 M15 18 L25 22 M15 35 L20 30 M20 30 L25 35" stroke="#1f2937" stroke-width="2"/>
+        <!-- Footsteps -->
+        <ellipse cx="15" cy="40" rx="3" ry="2" fill="#64748b"/>
+        <ellipse cx="25" cy="45" rx="3" ry="2" fill="#64748b"/>
+        <ellipse cx="35" cy="40" rx="3" ry="2" fill="#64748b"/>
+      </g>
+      
+      <!-- Exercise 3: Breathing -->
+      <text x="60" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#065f46">3. Thở sâu (10 phút)</text>
+      
+      <!-- Breathing figure -->
+      <g transform="translate(40, 165)">
+        <circle cx="20" cy="8" r="6" fill="#fbbf24"/>
+        <path d="M20 14 L20 30 M15 18 L25 18" stroke="#1f2937" stroke-width="2"/>
+        <!-- Breathing indicator -->
+        <circle cx="20" cy="22" r="8" fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="4,4">
+          <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <text x="20" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#22c55e">Hít vào - Thở ra</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Generation process visualization -->
+  <g transform="translate(100, 350)">
+    <text x="300" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b">Quy Trình Tạo Tài Liệu</text>
+    
+    <!-- Step 1: Input -->
+    <g transform="translate(0, 40)">
+      <rect x="0" y="0" width="120" height="60" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" rx="8"/>
+      <text x="60" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">📝 Input</text>
+      <text x="60" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">Chẩn đoán</text>
+      <text x="60" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">+ Độ tuổi</text>
+    </g>
+    
+    <path d="M140 70 L170 70" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Step 2: AI Processing -->
+    <g transform="translate(190, 40)">
+      <rect x="0" y="0" width="120" height="60" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="8"/>
+      <circle cx="60" cy="30" r="15" fill="#f59e0b"/>
+      <text x="60" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">AI</text>
+      
+      <!-- Processing animation -->
+      <g transform="translate(30, 15)">
+        <circle cx="15" cy="15" r="2" fill="#f59e0b">
+          <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="25" cy="15" r="2" fill="#f59e0b">
+          <animate attributeName="opacity" values="0.3;1;0.3" dur="1s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="35" cy="15" r="2" fill="#f59e0b">
+          <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+    </g>
+    
+    <path d="M330 70 L360 70" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Step 3: Customized Output -->
+    <g transform="translate(380, 40)">
+      <rect x="0" y="0" width="120" height="60" fill="#dcfce7" stroke="#22c55e" stroke-width="2" rx="8"/>
+      <text x="60" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#166534">📋 Output</text>
+      <text x="60" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#166534">Tài liệu</text>
+      <text x="60" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#166534">cá nhân hóa</text>
+    </g>
+    
+    <!-- Patient receiving leaflet -->
+    <g transform="translate(550, 40)">
+      <!-- Patient figure -->
+      <circle cx="30" cy="15" r="10" fill="#fbbf24"/>
+      <rect x="25" y="25" width="10" height="20" fill="#6b7280"/>
+      <path d="M20 35 L25 45 M35 35 L40 45" stroke="#1f2937" stroke-width="2"/>
+      
+      <!-- Leaflet in hand -->
+      <rect x="15" y="20" width="8" height="12" fill="#ffffff" stroke="#e2e8f0"/>
+      <text x="19" y="27" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#1e293b">📄</text>
+      
+      <!-- Happy expression -->
+      <circle cx="25" cy="12" r="1" fill="#1f2937"/>
+      <circle cx="35" cy="12" r="1" fill="#1f2937"/>
+      <path d="M25 18 Q30 22 35 18" stroke="#22c55e" stroke-width="1" fill="none"/>
+    </g>
+  </g>
+  
+  <!-- Benefits panel -->
+  <g transform="translate(100, 480)">
+    <rect x="0" y="0" width="600" height="80" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2" rx="10"/>
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b">Lợi Ích Của AI trong Giáo Dục Bệnh Nhân</text>
+    
+    <g transform="translate(50, 35)">
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" fill="#059669">⚡ Tạo nhanh (30 giây)</text>
+      <text x="150" y="15" font-family="Arial, sans-serif" font-size="12" fill="#3b82f6">🎯 Cá nhân hóa theo bệnh</text>
+      <text x="330" y="15" font-family="Arial, sans-serif" font-size="12" fill="#7c3aed">🌍 Đa ngôn ngữ</text>
+      <text x="450" y="15" font-family="Arial, sans-serif" font-size="12" fill="#dc2626">💰 Tiết kiệm chi phí</text>
+    </g>
+    
+    <g transform="translate(50, 50)">
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" fill="#f59e0b">📱 Tương thích mobile</text>
+      <text x="150" y="15" font-family="Arial, sans-serif" font-size="12" fill="#22c55e">♿ Dễ hiểu với mọi độ tuổi</text>
+      <text x="330" y="15" font-family="Arial, sans-serif" font-size="12" fill="#0ea5e9">🔄 Cập nhật tự động</text>
+      <text x="450" y="15" font-family="Arial, sans-serif" font-size="12" fill="#8b5cf6">📊 Theo dõi hiệu quả</text>
+    </g>
+  </g>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

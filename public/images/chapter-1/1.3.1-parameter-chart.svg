@@ -1,0 +1,67 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 32px; font-weight: 600; fill: #1f2937; text-anchor: middle; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 28px; font-weight: 600; fill: #1f2937; text-anchor: middle; }
+      .axis-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 18px; fill: #6b7280; text-anchor: middle; }
+      .bar-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 16px; fill: #1f2937; text-anchor: middle; font-weight: 500; }
+      .value-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 20px; fill: #1f2937; text-anchor: middle; font-weight: 600; }
+      .small-value { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 16px; fill: #1f2937; text-anchor: middle; font-weight: 500; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" class="title">Parameters of transformer-based</text>
+  <text x="400" y="85" class="subtitle">language models</text>
+  
+  <!-- Y-axis -->
+  <line x1="100" y1="120" x2="100" y2="480" stroke="#e5e7eb" stroke-width="2"/>
+  
+  <!-- Y-axis labels -->
+  <text x="85" y="130" class="axis-label" text-anchor="end">200</text>
+  <text x="85" y="200" class="axis-label" text-anchor="end">150</text>
+  <text x="85" y="270" class="axis-label" text-anchor="end">100</text>
+  <text x="85" y="340" class="axis-label" text-anchor="end">50</text>
+  <text x="85" y="480" class="axis-label" text-anchor="end">0</text>
+  
+  <!-- Y-axis title (rotated) -->
+  <text x="30" y="300" class="axis-label" text-anchor="middle" transform="rotate(-90, 30, 300)">Parameters (billions)</text>
+  
+  <!-- X-axis -->
+  <line x1="100" y1="480" x2="720" y2="480" stroke="#e5e7eb" stroke-width="2"/>
+  
+  <!-- Bars -->
+  <!-- GPT-1: 175 billion (height proportional to value) -->
+  <rect x="130" y="145" width="80" height="335" fill="#8b5cf6" opacity="0.8"/>
+  <text x="170" y="135" class="value-label">175 billion</text>
+  <text x="170" y="510" class="bar-label">GPT-1</text>
+  
+  <!-- Turing NLG: 17 billion -->
+  <rect x="240" y="423" width="80" height="57" fill="#8b5cf6" opacity="0.6"/>
+  <text x="280" y="413" class="value-label">17 billion</text>
+  <text x="280" y="510" class="bar-label">Turing NLG</text>
+  
+  <!-- GPT-Neo: 2.7 billion -->
+  <rect x="350" y="458" width="80" height="22" fill="#8b5cf6" opacity="0.5"/>
+  <text x="390" y="448" class="small-value">2.7 billion</text>
+  <text x="390" y="510" class="bar-label">GPT-Neo</text>
+  
+  <!-- GPT-2: 2 billion -->
+  <rect x="460" y="462" width="80" height="18" fill="#8b5cf6" opacity="0.4"/>
+  <text x="500" y="452" class="small-value">2 billion</text>
+  <text x="500" y="510" class="bar-label">GPT-2</text>
+  
+  <!-- BERT: 345 million -->
+  <rect x="570" y="472" width="80" height="8" fill="#8b5cf6" opacity="0.3"/>
+  <text x="610" y="462" class="small-value">345 million</text>
+  <text x="610" y="510" class="bar-label">BERT</text>
+  
+  <!-- Grid lines for better readability -->
+  <line x1="100" y1="200" x2="720" y2="200" stroke="#f3f4f6" stroke-width="1"/>
+  <line x1="100" y1="270" x2="720" y2="270" stroke="#f3f4f6" stroke-width="1"/>
+  <line x1="100" y1="340" x2="720" y2="340" stroke="#f3f4f6" stroke-width="1"/>
+  <line x1="100" y1="410" x2="720" y2="410" stroke="#f3f4f6" stroke-width="1"/>
+</svg>

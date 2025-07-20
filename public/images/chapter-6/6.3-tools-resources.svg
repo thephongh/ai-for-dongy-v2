@@ -1,0 +1,191 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgTools" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f9fafb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f3f4f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgTools)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#374151">
+    Các công cụ và Tài nguyên Hữu ích
+  </text>
+  
+  <!-- Central toolbox -->
+  <g transform="translate(320, 180)">
+    <rect x="0" y="0" width="160" height="100" rx="10" fill="#6b7280" stroke="#4b5563" stroke-width="3"/>
+    <rect x="10" y="10" width="140" height="80" fill="#9ca3af"/>
+    <text x="80" y="45" text-anchor="middle" font-family="Arial" font-size="20" fill="white">🧰</text>
+    <text x="80" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">
+      Hộp công cụ
+    </text>
+    <text x="80" y="85" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">
+      AI & YHCT
+    </text>
+  </g>
+  
+  <!-- AI Tools Section -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="220" height="180" rx="15" fill="white" stroke="#3b82f6" stroke-width="3"/>
+    
+    <text x="110" y="25" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#1e40af">
+      🤖 Công cụ AI Chính
+    </text>
+    
+    <!-- ChatGPT -->
+    <g transform="translate(20, 40)">
+      <circle cx="20" cy="20" r="15" fill="#10a37f"/>
+      <text x="20" y="26" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">GPT</text>
+      <text x="50" y="18" font-family="Arial" font-size="13" font-weight="bold" fill="#374151">ChatGPT</text>
+      <text x="50" y="32" font-family="Arial" font-size="10" fill="#6b7280">OpenAI - Mạnh về text</text>
+    </g>
+    
+    <!-- Google Gemini -->
+    <g transform="translate(20, 75)">
+      <circle cx="20" cy="20" r="15" fill="#4285f4"/>
+      <text x="20" y="26" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">G</text>
+      <text x="50" y="18" font-family="Arial" font-size="13" font-weight="bold" fill="#374151">Google Gemini</text>
+      <text x="50" y="32" font-family="Arial" font-size="10" fill="#6b7280">Google - Đa phương tiện</text>
+    </g>
+    
+    <!-- Claude -->
+    <g transform="translate(20, 110)">
+      <circle cx="20" cy="20" r="15" fill="#d97706"/>
+      <text x="20" y="26" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">C</text>
+      <text x="50" y="18" font-family="Arial" font-size="13" font-weight="bold" fill="#374151">Claude</text>
+      <text x="50" y="32" font-family="Arial" font-size="10" fill="#6b7280">Anthropic - An toàn, logic</text>
+    </g>
+    
+    <!-- Quick tip -->
+    <rect x="10" y="145" width="200" height="25" rx="5" fill="#eff6ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="110" y="162" text-anchor="middle" font-family="Arial" font-size="10" fill="#1e40af">
+      💡 Thử cả 3 để tìm ra phù hợp nhất
+    </text>
+  </g>
+  
+  <!-- Research Tools -->
+  <g transform="translate(300, 80)">
+    <rect x="0" y="0" width="220" height="180" rx="15" fill="white" stroke="#10b981" stroke-width="3"/>
+    
+    <text x="110" y="25" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#059669">
+      📚 Nguồn Nghiên cứu
+    </text>
+    
+    <!-- Google Scholar -->
+    <g transform="translate(20, 40)">
+      <circle cx="20" cy="20" r="15" fill="#4285f4"/>
+      <text x="20" y="26" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="white">GS</text>
+      <text x="50" y="18" font-family="Arial" font-size="13" font-weight="bold" fill="#374151">Google Scholar</text>
+      <text x="50" y="32" font-family="Arial" font-size="10" fill="#6b7280">Tìm bài báo khoa học</text>
+    </g>
+    
+    <!-- PubMed -->
+    <g transform="translate(20, 75)">
+      <circle cx="20" cy="20" r="15" fill="#326295"/>
+      <text x="20" y="26" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="white">PM</text>
+      <text x="50" y="18" font-family="Arial" font-size="13" font-weight="bold" fill="#374151">PubMed</text>
+      <text x="50" y="32" font-family="Arial" font-size="10" fill="#6b7280">Cơ sở dữ liệu y học</text>
+    </g>
+    
+    <!-- AI Summary tip -->
+    <rect x="10" y="110" width="200" height="40" rx="5" fill="#ecfdf5" stroke="#10b981" stroke-width="1"/>
+    <text x="110" y="125" text-anchor="middle" font-family="Arial" font-size="10" fill="#059669">
+      💡 Dùng AI để tóm tắt
+    </text>
+    <text x="110" y="140" text-anchor="middle" font-family="Arial" font-size="10" fill="#059669">
+      bài báo từ đây
+    </text>
+  </g>
+  
+  <!-- Community Resources -->
+  <g transform="translate(550, 80)">
+    <rect x="0" y="0" width="200" height="180" rx="15" fill="white" stroke="#f59e0b" stroke-width="3"/>
+    
+    <text x="100" y="25" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#d97706">
+      👥 Cộng đồng
+    </text>
+    
+    <!-- Facebook Groups -->
+    <g transform="translate(20, 40)">
+      <circle cx="20" cy="20" r="15" fill="#1877f2"/>
+      <text x="20" y="26" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="white">f</text>
+      <text x="50" y="18" font-family="Arial" font-size="12" font-weight="bold" fill="#374151">"AI trong Y Tế"</text>
+      <text x="50" y="32" font-family="Arial" font-size="10" fill="#6b7280">Nhóm Facebook VN</text>
+    </g>
+    
+    <!-- Medical Forums -->
+    <g transform="translate(20, 75)">
+      <circle cx="20" cy="20" r="15" fill="#059669"/>
+      <text x="20" y="26" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">💬</text>
+      <text x="50" y="18" font-family="Arial" font-size="12" font-weight="bold" fill="#374151">Diễn đàn Y khoa</text>
+      <text x="50" y="32" font-family="Arial" font-size="10" fill="#6b7280">Trao đổi kinh nghiệm</text>
+    </g>
+    
+    <!-- Professional Networks -->
+    <g transform="translate(20, 110)">
+      <circle cx="20" cy="20" r="15" fill="#7c3aed"/>
+      <text x="20" y="26" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">👥</text>
+      <text x="50" y="18" font-family="Arial" font-size="12" font-weight="bold" fill="#374151">Mạng lưới chuyên gia</text>
+      <text x="50" y="32" font-family="Arial" font-size="10" fill="#6b7280">LinkedIn, Telegram</text>
+    </g>
+  </g>
+  
+  <!-- Search Keywords Section -->
+  <g transform="translate(100, 320)">
+    <rect x="0" y="0" width="600" height="120" rx="15" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#475569">
+      🔍 Từ khóa hữu ích để tìm kiếm
+    </text>
+    
+    <!-- English keywords -->
+    <g transform="translate(30, 45)">
+      <text x="0" y="15" font-family="Arial" font-size="12" font-weight="bold" fill="#475569">Tiếng Anh:</text>
+      <text x="0" y="35" font-family="Arial" font-size="11" fill="#374151">• "prompt engineering for doctors"</text>
+      <text x="0" y="50" font-family="Arial" font-size="11" fill="#374151">• "AI in traditional medicine"</text>
+      <text x="0" y="65" font-family="Arial" font-size="11" fill="#374151">• "LLM in healthcare"</text>
+    </g>
+    
+    <!-- Vietnamese keywords -->
+    <g transform="translate(320, 45)">
+      <text x="0" y="15" font-family="Arial" font-size="12" font-weight="bold" fill="#475569">Tiếng Việt:</text>
+      <text x="0" y="35" font-family="Arial" font-size="11" fill="#374151">• "AI trong y học cổ truyền"</text>
+      <text x="0" y="50" font-family="Arial" font-size="11" fill="#374151">• "Trí tuệ nhân tạo YHCT"</text>
+      <text x="0" y="65" font-family="Arial" font-size="11" fill="#374151">• "Công nghệ y tế thông minh"</text>
+    </g>
+  </g>
+  
+  <!-- Learning Habit Section -->
+  <g transform="translate(100, 460)">
+    <rect x="0" y="0" width="600" height="100" rx="15" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#92400e">
+      📚 Thói quen học tập suốt đời
+    </text>
+    
+    <!-- Daily habits -->
+    <g transform="translate(50, 45)">
+      <circle cx="10" cy="10" r="5" fill="#f59e0b"/>
+      <text x="25" y="15" font-family="Arial" font-size="12" fill="#78350f">
+        <tspan font-weight="bold">Đọc:</tspan> Theo dõi 1-2 trang tin tức AI trong y tế
+      </text>
+    </g>
+    
+    <g transform="translate(350, 45)">
+      <circle cx="10" cy="10" r="5" fill="#f59e0b"/>
+      <text x="25" y="15" font-family="Arial" font-size="12" fill="#78350f">
+        <tspan font-weight="bold">Xem:</tspan> Video ngắn về tính năng AI mới
+      </text>
+    </g>
+    
+    <g transform="translate(200, 70)">
+      <circle cx="10" cy="10" r="5" fill="#f59e0b"/>
+      <text x="25" y="15" font-family="Arial" font-size="12" fill="#78350f">
+        <tspan font-weight="bold">Thảo luận:</tspan> Tham gia nhóm, diễn đàn trao đổi kinh nghiệm
+      </text>
+    </g>
+  </g>
+</svg>

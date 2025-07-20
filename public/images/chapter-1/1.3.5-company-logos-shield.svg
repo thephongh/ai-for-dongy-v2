@@ -1,0 +1,85 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .ai-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 120px; font-weight: 300; fill: none; stroke: #00d4ff; stroke-width: 3; text-anchor: middle; }
+      .glow { filter: url(#glow-filter); }
+      .particle { fill: #ffffff; opacity: 0.8; }
+      .connection-line { stroke: #00d4ff; stroke-width: 1; opacity: 0.3; }
+    </style>
+    
+    <!-- Glow effect filter -->
+    <filter id="glow-filter" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Radial gradient for background -->
+    <radialGradient id="bg-gradient" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg-gradient)"/>
+  
+  <!-- Network/connection lines -->
+  <line x1="50" y1="80" x2="150" y2="120" class="connection-line"/>
+  <line x1="150" y1="120" x2="250" y2="60" class="connection-line"/>
+  <line x1="250" y1="60" x2="350" y2="100" class="connection-line"/>
+  <line x1="350" y1="100" x2="450" y2="80" class="connection-line"/>
+  <line x1="450" y1="80" x2="550" y2="120" class="connection-line"/>
+  
+  <line x1="80" y1="280" x2="180" y2="320" class="connection-line"/>
+  <line x1="180" y1="320" x2="280" y2="260" class="connection-line"/>
+  <line x1="280" y1="260" x2="380" y2="300" class="connection-line"/>
+  <line x1="380" y1="300" x2="480" y2="280" class="connection-line"/>
+  <line x1="480" y1="280" x2="520" y2="320" class="connection-line"/>
+  
+  <!-- Diagonal connections -->
+  <line x1="100" y1="150" x2="200" y2="250" class="connection-line"/>
+  <line x1="400" y1="150" x2="500" y2="250" class="connection-line"/>
+  <line x1="300" y1="100" x2="300" y2="300" class="connection-line"/>
+  
+  <!-- Particles/nodes -->
+  <circle cx="50" cy="80" r="3" class="particle"/>
+  <circle cx="150" cy="120" r="3" class="particle"/>
+  <circle cx="250" cy="60" r="3" class="particle"/>
+  <circle cx="350" cy="100" r="3" class="particle"/>
+  <circle cx="450" cy="80" r="3" class="particle"/>
+  <circle cx="550" cy="120" r="3" class="particle"/>
+  
+  <circle cx="80" cy="280" r="3" class="particle"/>
+  <circle cx="180" cy="320" r="3" class="particle"/>
+  <circle cx="280" cy="260" r="3" class="particle"/>
+  <circle cx="380" cy="300" r="3" class="particle"/>
+  <circle cx="480" cy="280" r="3" class="particle"/>
+  <circle cx="520" cy="320" r="3" class="particle"/>
+  
+  <circle cx="100" cy="150" r="3" class="particle"/>
+  <circle cx="200" cy="250" r="3" class="particle"/>
+  <circle cx="400" cy="150" r="3" class="particle"/>
+  <circle cx="500" cy="250" r="3" class="particle"/>
+  <circle cx="300" cy="100" r="3" class="particle"/>
+  <circle cx="300" cy="300" r="3" class="particle"/>
+  
+  <!-- Additional scattered particles -->
+  <circle cx="120" cy="200" r="2" class="particle" opacity="0.6"/>
+  <circle cx="420" cy="220" r="2" class="particle" opacity="0.6"/>
+  <circle cx="320" cy="180" r="2" class="particle" opacity="0.6"/>
+  <circle cx="180" cy="180" r="2" class="particle" opacity="0.6"/>
+  <circle cx="480" cy="180" r="2" class="particle" opacity="0.6"/>
+  <circle cx="220" cy="320" r="2" class="particle" opacity="0.6"/>
+  <circle cx="380" cy="340" r="2" class="particle" opacity="0.6"/>
+  
+  <!-- Main AI text with glow effect -->
+  <text x="300" y="230" class="ai-text glow">AI</text>
+  
+  <!-- Additional subtle connecting lines around the text -->
+  <circle cx="300" cy="200" r="80" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.2"/>
+  <circle cx="300" cy="200" r="100" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.1"/>
+</svg>

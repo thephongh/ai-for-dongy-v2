@@ -1,0 +1,64 @@
+{
+  "id": "chapter-5-quiz",
+  "chapterId": "chapter-5",
+  "timeLimit": 20,
+  "passingScore": 75,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Hiện tượng AI tự tin bịa ra thông tin không có thật được gọi là gì?",
+      "options": [
+        "Lỗi hệ thống (System Error)",
+        "Thiên kiến (Bias)",
+        "Ảo giác (Hallucination)",
+        "Tối ưu hóa (Optimization)"
+      ],
+      "correctAnswer": "Ảo giác (Hallucination)",
+      "explanation": "'Ảo giác' là một thuật ngữ quan trọng, mô tả việc AI tạo ra thông tin nghe có vẻ hợp lý nhưng hoàn toàn không có thật. Đây là rủi ro lớn nhất cần lưu ý.",
+      "points": 25
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Nguyên tắc nào sau đây là quan trọng nhất về bảo mật khi sử dụng AI?",
+      "options": [
+        "Không bao giờ chia sẻ câu trả lời của AI cho người khác.",
+        "Luôn đăng xuất sau khi sử dụng.",
+        "Không bao giờ nhập thông tin có thể định danh cá nhân của bệnh nhân vào AI công cộng.",
+        "Chỉ sử dụng AI trên máy tính cá nhân."
+      ],
+      "correctAnswer": "Không bao giờ nhập thông tin có thể định danh cá nhân của bệnh nhân vào AI công cộng.",
+      "explanation": "Bảo vệ thông tin bệnh nhân là lời thề Hippocrates trong thời đại số. Việc làm lộ thông tin định danh là vi phạm đạo đức và pháp lý nghiêm trọng.",
+      "points": 25
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Khi xảy ra sai sót trong điều trị có liên quan đến việc sử dụng AI, ai là người chịu trách nhiệm pháp lý cuối cùng?",
+      "options": [
+        "Công ty tạo ra AI.",
+        "AI, vì nó đã đưa ra gợi ý sai.",
+        "Bệnh nhân, vì đã đồng ý sử dụng AI.",
+        "Lương y, người trực tiếp ra quyết định điều trị."
+      ],
+      "correctAnswer": "Lương y, người trực tiếp ra quyết định điều trị.",
+      "explanation": "Pháp luật hiện hành coi AI là một công cụ. Người sử dụng công cụ phải chịu trách nhiệm cho các quyết định của mình, tương tự như sử dụng máy móc y tế khác.",
+      "points": 25
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "Thiên kiến (Bias) trong AI có nghĩa là gì?",
+      "options": [
+        "AI luôn nói sự thật khách quan.",
+        "AI có thể đưa ra kết quả kém chính xác cho một nhóm đối tượng nào đó do dữ liệu huấn luyện không cân bằng.",
+        "AI có cảm xúc và yêu ghét riêng.",
+        "AI luôn ưu tiên những thông tin mới nhất."
+      ],
+      "correctAnswer": "AI có thể đưa ra kết quả kém chính xác cho một nhóm đối tượng nào đó do dữ liệu huấn luyện không cân bằng.",
+      "explanation": "Vì AI học từ dữ liệu của con người, nó có thể 'học' cả những định kiến, sự thiếu cân bằng trong dữ liệu đó, dẫn đến kết quả không hoàn toàn khách quan.",
+      "points": 25
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff"/>
+      <stop offset="100%" style="stop-color:#e0f2fe"/>
+    </linearGradient>
+    <linearGradient id="toolboxGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <radialGradient id="toolGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ddd6fe" stop-opacity="0.8"/>
+      <stop offset="100%" style="stop-color:#ddd6fe" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b">🧰 Hệ Sinh Thái Công Cụ AI</text>
+  
+  <!-- Central toolbox -->
+  <g transform="translate(350, 250)">
+    <!-- Glow effect -->
+    <ellipse cx="50" cy="40" rx="80" ry="60" fill="url(#toolGlow)"/>
+    
+    <!-- Toolbox body -->
+    <rect x="0" y="0" width="100" height="80" fill="url(#toolboxGradient)" stroke="#6d28d9" stroke-width="4" rx="10"/>
+    
+    <!-- Toolbox handle -->
+    <rect x="20" y="-10" width="60" height="15" fill="#64748b" stroke="#475569" stroke-width="2" rx="7"/>
+    
+    <!-- Central AI icon -->
+    <text x="50" y="50" text-anchor="middle" font-size="32" fill="white">🤖</text>
+    
+    <!-- Tool compartments -->
+    <rect x="10" y="15" width="35" height="20" fill="#c4b5fd" stroke="#a78bfa" stroke-width="1" rx="3"/>
+    <rect x="55" y="15" width="35" height="20" fill="#c4b5fd" stroke="#a78bfa" stroke-width="1" rx="3"/>
+    <rect x="10" y="55" width="80" height="15" fill="#c4b5fd" stroke="#a78bfa" stroke-width="1" rx="3"/>
+  </g>
+  
+  <!-- Category 1: LLM Platforms (Top Left) -->
+  <g transform="translate(100, 120)">
+    <rect x="0" y="0" width="180" height="120" fill="#fef3c7" stroke="#f59e0b" stroke-width="3" rx="12"/>
+    <text x="90" y="25" text-anchor="middle" font-size="18" font-weight="bold" fill="#92400e">🤖 LLM Chính</text>
+    
+    <!-- ChatGPT -->
+    <g transform="translate(30, 40)">
+      <circle cx="0" cy="0" r="18" fill="#22c55e"/>
+      <text x="0" y="6" text-anchor="middle" font-size="12" font-weight="bold" fill="white">GPT</text>
+      <text x="0" y="30" text-anchor="middle" font-size="14" fill="#1e293b">ChatGPT</text>
+    </g>
+    
+    <!-- Claude -->
+    <g transform="translate(90, 40)">
+      <circle cx="0" cy="0" r="18" fill="#f59e0b"/>
+      <text x="0" y="6" text-anchor="middle" font-size="12" font-weight="bold" fill="white">CL</text>
+      <text x="0" y="30" text-anchor="middle" font-size="14" fill="#1e293b">Claude</text>
+    </g>
+    
+    <!-- Gemini -->
+    <g transform="translate(150, 40)">
+      <circle cx="0" cy="0" r="18" fill="#3b82f6"/>
+      <text x="0" y="6" text-anchor="middle" font-size="12" font-weight="bold" fill="white">GM</text>
+      <text x="0" y="30" text-anchor="middle" font-size="14" fill="#1e293b">Gemini</text>
+    </g>
+    
+    <!-- Features -->
+    <g transform="translate(90, 85)">
+      <text x="0" y="0" text-anchor="middle" font-size="12" fill="#92400e">Dễ Dùng • Đa Năng • Tiếng Việt</text>
+    </g>
+  </g>
+  
+  <!-- Category 2: Specialized Medical AI (Top Right) -->
+  <g transform="translate(520, 120)">
+    <rect x="0" y="0" width="180" height="120" fill="#dcfce7" stroke="#22c55e" stroke-width="3" rx="12"/>
+    <text x="90" y="25" text-anchor="middle" font-size="18" font-weight="bold" fill="#166534">🏥 AI Y Khoa</text>
+    
+    <!-- Medical Research -->
+    <g transform="translate(30, 40)">
+      <circle cx="0" cy="0" r="18" fill="#ef4444"/>
+      <text x="0" y="6" text-anchor="middle" font-size="16" fill="white">📚</text>
+      <text x="0" y="30" text-anchor="middle" font-size="14" fill="#1e293b">PubMed</text>
+    </g>
+    
+    <!-- Diagnosis -->
+    <g transform="translate(90, 40)">
+      <circle cx="0" cy="0" r="18" fill="#8b5cf6"/>
+      <text x="0" y="6" text-anchor="middle" font-size="16" fill="white">🔍</text>
+      <text x="0" y="30" text-anchor="middle" font-size="14" fill="#1e293b">Chẩn Đoán</text>
+    </g>
+    
+    <!-- Drug Check -->
+    <g transform="translate(150, 40)">
+      <circle cx="0" cy="0" r="18" fill="#0ea5e9"/>
+      <text x="0" y="6" text-anchor="middle" font-size="16" fill="white">💊</text>
+      <text x="0" y="30" text-anchor="middle" font-size="14" fill="#1e293b">Thuốc</text>
+    </g>
+    
+    <!-- Features -->
+    <g transform="translate(90, 85)">
+      <text x="0" y="0" text-anchor="middle" font-size="12" fill="#166534">Chuyên Biệt • Nghiên Cứu</text>
+    </g>
+  </g>
+  
+  <!-- Category 3: Content Creation (Bottom Left) -->
+  <g transform="translate(100, 380)">
+    <rect x="0" y="0" width="180" height="120" fill="#fecaca" stroke="#ef4444" stroke-width="3" rx="12"/>
+    <text x="90" y="25" text-anchor="middle" font-size="18" font-weight="bold" fill="#dc2626">✍️ Tạo Nội Dung</text>
+    
+    <!-- Writing -->
+    <g transform="translate(30, 40)">
+      <circle cx="0" cy="0" r="18" fill="#059669"/>
+      <text x="0" y="6" text-anchor="middle" font-size="16" fill="white">📄</text>
+      <text x="0" y="30" text-anchor="middle" font-size="14" fill="#1e293b">Viết Bài</text>
+    </g>
+    
+    <!-- Images -->
+    <g transform="translate(90, 40)">
+      <circle cx="0" cy="0" r="18" fill="#7c3aed"/>
+      <text x="0" y="6" text-anchor="middle" font-size="16" fill="white">🎨</text>
+      <text x="0" y="30" text-anchor="middle" font-size="14" fill="#1e293b">Hình Ảnh</text>
+    </g>
+    
+    <!-- Presentations -->
+    <g transform="translate(150, 40)">
+      <circle cx="0" cy="0" r="18" fill="#f59e0b"/>
+      <text x="0" y="6" text-anchor="middle" font-size="16" fill="white">📊</text>
+      <text x="0" y="30" text-anchor="middle" font-size="14" fill="#1e293b">Slide</text>
+    </g>
+    
+    <!-- Features -->
+    <g transform="translate(90, 85)">
+      <text x="0" y="0" text-anchor="middle" font-size="12" fill="#dc2626">Marketing • Giáo Dục</text>
+    </g>
+  </g>
+  
+  <!-- Category 4: Practice Management (Bottom Right) -->
+  <g transform="translate(520, 380)">
+    <rect x="0" y="0" width="180" height="120" fill="#dbeafe" stroke="#3b82f6" stroke-width="3" rx="12"/>
+    <text x="90" y="25" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e40af">📈 Quản Lý</text>
+    
+    <!-- Scheduling -->
+    <g transform="translate(30, 40)">
+      <circle cx="0" cy="0" r="18" fill="#22c55e"/>
+      <text x="0" y="6" text-anchor="middle" font-size="16" fill="white">📅</text>
+      <text x="0" y="30" text-anchor="middle" font-size="14" fill="#1e293b">Lịch Hẹn</text>
+    </g>
+    
+    <!-- Customer Service -->
+    <g transform="translate(90, 40)">
+      <circle cx="0" cy="0" r="18" fill="#ec4899"/>
+      <text x="0" y="6" text-anchor="middle" font-size="16" fill="white">💬</text>
+      <text x="0" y="30" text-anchor="middle" font-size="14" fill="#1e293b">Chatbot</text>
+    </g>
+    
+    <!-- Analytics -->
+    <g transform="translate(150, 40)">
+      <circle cx="0" cy="0" r="18" fill="#f97316"/>
+      <text x="0" y="6" text-anchor="middle" font-size="16" fill="white">📊</text>
+      <text x="0" y="30" text-anchor="middle" font-size="14" fill="#1e293b">Phân Tích</text>
+    </g>
+    
+    <!-- Features -->
+    <g transform="translate(90, 85)">
+      <text x="0" y="0" text-anchor="middle" font-size="12" fill="#1e40af">Tự Động • Thông Minh</text>
+    </g>
+  </g>
+  
+  <!-- Connecting lines from toolbox to categories -->
+  <g stroke="#8b5cf6" stroke-width="4" opacity="0.6" stroke-dasharray="8,8">
+    <path d="M350 290 Q250 250 190 200"/>
+    <path d="M450 290 Q550 250 610 200"/>
+    <path d="M350 330 Q250 370 190 420"/>
+    <path d="M450 330 Q550 370 610 420"/>
+  </g>
+  
+  <!-- Learning progression -->
+  <g transform="translate(50, 300)">
+    <text x="0" y="0" font-size="16" font-weight="bold" fill="#8b5cf6">🎯 Lộ Trình:</text>
+    
+    <g transform="translate(0, 25)">
+      <circle cx="10" cy="10" r="10" fill="#22c55e"/>
+      <text x="10" y="15" text-anchor="middle" font-size="10" font-weight="bold" fill="white">1</text>
+      <text x="30" y="15" font-size="14" fill="#166534">LLM Cơ Bản</text>
+    </g>
+    
+    <g transform="translate(0, 50)">
+      <circle cx="10" cy="10" r="10" fill="#3b82f6"/>
+      <text x="10" y="15" text-anchor="middle" font-size="10" font-weight="bold" fill="white">2</text>
+      <text x="30" y="15" font-size="14" fill="#1e40af">Tạo Nội Dung</text>
+    </g>
+    
+    <g transform="translate(0, 75)">
+      <circle cx="10" cy="10" r="10" fill="#f59e0b"/>
+      <text x="10" y="15" text-anchor="middle" font-size="10" font-weight="bold" fill="white">3</text>
+      <text x="30" y="15" font-size="14" fill="#92400e">Quản Lý</text>
+    </g>
+    
+    <g transform="translate(0, 100)">
+      <circle cx="10" cy="10" r="10" fill="#8b5cf6"/>
+      <text x="10" y="15" text-anchor="middle" font-size="10" font-weight="bold" fill="white">4</text>
+      <text x="30" y="15" font-size="14" fill="#7c3aed">Chuyên Biệt</text>
+    </g>
+  </g>
+  
+  <!-- Cost consideration -->
+  <g transform="translate(650, 300)">
+    <rect x="0" y="0" width="120" height="120" fill="#fef7f7" stroke="#f87171" stroke-width="2" rx="8"/>
+    <text x="60" y="20" text-anchor="middle" font-size="16" font-weight="bold" fill="#dc2626">💰 Chi Phí</text>
+    
+    <g transform="translate(10, 30)">
+      <text x="0" y="20" font-size="12" fill="#dc2626">• Miễn phí: Cơ bản</text>
+      <text x="0" y="40" font-size="12" fill="#dc2626">• $20/tháng: Pro</text>
+      <text x="0" y="60" font-size="12" fill="#dc2626">• $50+: Chuyên biệt</text>
+      <text x="0" y="85" font-size="12" font-weight="bold" fill="#059669">💡 Bắt đầu miễn phí!</text>
+    </g>
+  </g>
+  
+  <!-- Recommendation panel -->
+  <g transform="translate(200, 520)">
+    <rect x="0" y="0" width="400" height="60" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2" rx="10"/>
+    <text x="200" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill="#374151">💡 Khuyến Nghị Cho Người Mới</text>
+    <text x="50" y="45" font-size="24" fill="#22c55e">🚀</text>
+    <text x="200" y="45" text-anchor="middle" font-size="14" fill="#6b7280">ChatGPT → Claude → Công cụ chuyên biệt</text>
+    <text x="350" y="45" font-size="24" fill="#8b5cf6">🎯</text>
+  </g>
+  
+  <!-- AI assistant helper -->
+  <g transform="translate(720, 80)">
+    <circle cx="30" cy="30" r="25" fill="#22d3ee" stroke="#0891b2" stroke-width="3"/>
+    <circle cx="22" cy="22" r="2" fill="#0f172a"/>
+    <circle cx="38" cy="22" r="2" fill="#0f172a"/>
+    <path d="M20 35 Q30 40 40 35" stroke="#0f172a" stroke-width="2" fill="none"/>
+    
+    <!-- Speech bubble -->
+    <rect x="-40" y="-15" width="60" height="25" fill="#fef3c7" stroke="#f59e0b" rx="5"/>
+    <path d="M10 10 L20 20 L15 10 Z" fill="#fef3c7"/>
+    <text x="-10" y="-3" text-anchor="middle" font-size="10" fill="#92400e">Cần trợ giúp?</text>
+  </g>
+</svg>

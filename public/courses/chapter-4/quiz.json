@@ -1,0 +1,64 @@
+{
+  "id": "chapter-4-quiz",
+  "chapterId": "chapter-4",
+  "timeLimit": 20,
+  "passingScore": 75,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Theo luồng làm việc được đề xuất, ai là người đưa ra quyết định chẩn đoán cuối cùng?",
+      "options": [
+        "AI, sau khi phân tích dữ liệu.",
+        "Bệnh nhân, sau khi đọc thông tin từ AI.",
+        "Lương y, sau khi khám và đối chiếu thông tin tham khảo từ AI.",
+        "Một hội đồng gồm lương y và AI."
+      ],
+      "correctAnswer": "Lương y, sau khi khám và đối chiếu thông tin tham khảo từ AI.",
+      "explanation": "Luồng làm việc an toàn luôn nhấn mạnh vai trò của lương y là người ra quyết định cuối cùng, còn AI chỉ đóng vai trò là một công cụ cố vấn.",
+      "points": 25
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Ứng dụng nào sau đây thuộc về việc dùng AI để quản lý phòng khám?",
+      "options": [
+        "So sánh dược tính của Hoàng Kỳ và Đảng Sâm.",
+        "Phân tích một ca bệnh mất ngủ theo YHCT.",
+        "Soạn tin nhắn Zalo nhắc lịch tái khám cho bệnh nhân.",
+        "Tạo tài liệu giáo dục bệnh nhân về bệnh trào ngược dạ dày."
+      ],
+      "correctAnswer": "Soạn tin nhắn Zalo nhắc lịch tái khám cho bệnh nhân.",
+      "explanation": "Việc soạn tin nhắn chăm sóc khách hàng là một ứng dụng của AI trong việc quản lý và vận hành phòng khám, giúp tiết kiệm thời gian và tăng tính chuyên nghiệp.",
+      "points": 25
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "AI có thể giúp giáo dục bệnh nhân hiệu quả hơn bằng cách nào?",
+      "options": [
+        "Tự động gọi điện cho bệnh nhân mỗi ngày.",
+        "Tạo ra các tài liệu hướng dẫn (ví dụ: chế độ ăn uống, sinh hoạt) với ngôn ngữ đơn giản, dễ hiểu.",
+        "Thay thế hoàn toàn việc dặn dò trực tiếp của lương y.",
+        "Bán các khóa học sức khỏe online."
+      ],
+      "correctAnswer": "Tạo ra các tài liệu hướng dẫn (ví dụ: chế độ ăn uống, sinh hoạt) với ngôn ngữ đơn giản, dễ hiểu.",
+      "explanation": "AI rất mạnh trong việc diễn giải các khái niệm phức tạp thành ngôn ngữ đời thường, giúp tạo ra các tài liệu hướng dẫn chất lượng, tăng sự tuân thủ điều trị.",
+      "points": 25
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "Mục đích chính của việc dùng AI để 'Tham khảo chẩn đoán' là gì?",
+      "options": [
+        "Để AI chẩn đoán bệnh thay cho mình.",
+        "Để có một câu trả lời chính xác tuyệt đối.",
+        "Để tìm kiếm các chẩn đoán phân biệt, giúp lương y không bỏ sót các khả năng.",
+        "Để chứng tỏ mình là một lương y hiện đại."
+      ],
+      "correctAnswer": "Để tìm kiếm các chẩn đoán phân biệt, giúp lương y không bỏ sót các khả năng.",
+      "explanation": "AI có thể truy cập kho dữ liệu lớn để gợi ý các khả năng khác nhau, giúp mở rộng tầm nhìn của lương y, nhưng không thay thế phán đoán cuối cùng.",
+      "points": 25
+    }
+  ]
+}

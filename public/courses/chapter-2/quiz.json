@@ -1,0 +1,64 @@
+{
+  "id": "chapter-2-quiz",
+  "chapterId": "chapter-2",
+  "timeLimit": 20,
+  "passingScore": 75,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Cơ chế học tập cốt lõi của một Mô hình Ngôn ngữ Lớn (LLM) là gì?",
+      "options": [
+        "Hiểu được đúng/sai một cách có ý thức.",
+        "Dự đoán từ hợp lý nhất để điền vào chỗ trống dựa trên xác suất thống kê.",
+        "Chỉ ghi nhớ và sao chép lại chính xác những gì đã đọc.",
+        "Thực hiện các phép tính toán học phức tạp."
+      ],
+      "correctAnswer": "Dự đoán từ hợp lý nhất để điền vào chỗ trống dựa trên xác suất thống kê.",
+      "explanation": "Bản chất của LLM là một cỗ máy dự đoán từ tiếp theo, từ đó học được các quy luật về ngôn ngữ và kiến thức.",
+      "points": 25
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Yếu tố nào được ví như 'Vua' khi làm việc với AI để có được câu trả lời chính xác?",
+      "options": [
+        "Tốc độ gõ phím.",
+        "Ngữ cảnh (Context) được cung cấp trong prompt.",
+        "Độ dài của câu hỏi.",
+        "Sử dụng thuật ngữ thật phức tạp."
+      ],
+      "correctAnswer": "Ngữ cảnh (Context) được cung cấp trong prompt.",
+      "explanation": "Cung cấp ngữ cảnh rõ ràng (bạn là ai, bạn cần gì, cho mục đích gì) giúp AI hiểu đúng yêu cầu và đưa ra câu trả lời phù hợp nhất.",
+      "points": 25
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Cấu trúc một prompt cơ bản (R-T-F) bao gồm những yếu tố nào?",
+      "options": [
+        "Review - Teach - Finish (Xem lại - Dạy - Kết thúc)",
+        "Read - Think - Feedback (Đọc - Suy nghĩ - Phản hồi)",
+        "Role - Task - Format (Vai trò - Nhiệm vụ - Định dạng)",
+        "Rule - Time - Function (Quy tắc - Thời gian - Chức năng)"
+      ],
+      "correctAnswer": "Role - Task - Format (Vai trò - Nhiệm vụ - Định dạng)",
+      "explanation": "Một prompt hiệu quả thường bắt đầu bằng việc xác định Vai trò cho AI, giao Nhiệm vụ cụ thể và yêu cầu một Định dạng đầu ra mong muốn.",
+      "points": 25
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "'Cửa sổ ngữ cảnh' (Context Window) của AI là gì?",
+      "options": [
+        "Toàn bộ kiến thức mà AI đã học.",
+        "Một chương trình AI riêng biệt.",
+        "'Trí nhớ ngắn hạn' của AI trong một cuộc trò chuyện.",
+        "Nơi lưu trữ các câu trả lời đúng."
+      ],
+      "correctAnswer": "'Trí nhớ ngắn hạn' của AI trong một cuộc trò chuyện.",
+      "explanation": "Cửa sổ ngữ cảnh là khả năng AI 'nhớ' những gì đã được nói trước đó trong cùng một phiên làm việc, nhưng nó có giới hạn.",
+      "points": 25
+    }
+  ]
+}

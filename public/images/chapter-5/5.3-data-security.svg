@@ -1,0 +1,126 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgSecurity" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ccfbf1;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="shieldGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgSecurity)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#059669">
+    Bảo mật Thông tin Bệnh nhân: Lời thề Hippocrates trong Thời đại Số
+  </text>
+  
+  <!-- Central shield protecting patient data -->
+  <g transform="translate(300, 100)">
+    <!-- Shield shape -->
+    <path d="M 100 20 
+             C 120 20, 140 30, 150 50 
+             L 150 120 
+             C 150 140, 130 160, 100 170 
+             C 70 160, 50 140, 50 120 
+             L 50 50 
+             C 50 30, 70 20, 100 20 Z" 
+          fill="url(#shieldGradient)" 
+          stroke="#047857" 
+          stroke-width="4"/>
+    
+    <!-- Lock symbol -->
+    <circle cx="100" cy="90" r="15" fill="none" stroke="white" stroke-width="4"/>
+    <rect x="90" y="100" width="20" height="25" rx="3" fill="white"/>
+    <circle cx="100" cy="110" r="3" fill="#059669"/>
+    
+    <!-- Patient file inside shield -->
+    <rect x="80" y="50" width="40" height="30" fill="white" rx="3"/>
+    <line x1="85" y1="58" x2="115" y2="58" stroke="#059669" stroke-width="2"/>
+    <line x1="85" y1="65" x2="110" y2="65" stroke="#059669" stroke-width="1"/>
+    <line x1="85" y1="70" x2="105" y2="70" stroke="#059669" stroke-width="1"/>
+  </g>
+  
+  <!-- Danger: Wrong way -->
+  <g transform="translate(50, 250)">
+    <rect x="0" y="0" width="300" height="120" rx="15" fill="#fef2f2" stroke="#dc2626" stroke-width="3"/>
+    
+    <text x="150" y="25" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#dc2626">
+      ❌ KHÔNG BAO GIỜ làm thế này
+    </text>
+    
+    <text x="20" y="50" font-family="Arial" font-size="12" font-weight="bold" fill="#374151">Prompt sai:</text>
+    <text x="20" y="68" font-family="Arial" font-size="11" fill="#374151">"Bệnh nhân Nguyễn Văn A, 45 tuổi,</text>
+    <text x="20" y="83" font-family="Arial" font-size="11" fill="#374151">CMND 123456789, ở 123 Đường ABC,</text>
+    <text x="20" y="98" font-family="Arial" font-size="11" fill="#374151">bị đau bụng, hãy chẩn đoán..."</text>
+    
+    <!-- Danger icons -->
+    <circle cx="270" cy="70" r="15" fill="#dc2626"/>
+    <text x="270" y="78" text-anchor="middle" font-family="Arial" font-size="18" fill="white">⚠️</text>
+  </g>
+  
+  <!-- Correct: Right way -->
+  <g transform="translate(450, 250)">
+    <rect x="0" y="0" width="300" height="120" rx="15" fill="#f0fdf4" stroke="#16a34a" stroke-width="3"/>
+    
+    <text x="150" y="25" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#16a34a">
+      ✅ Cách làm ĐÚNG
+    </text>
+    
+    <text x="20" y="50" font-family="Arial" font-size="12" font-weight="bold" fill="#374151">Prompt đúng:</text>
+    <text x="20" y="68" font-family="Arial" font-size="11" fill="#374151">"Bệnh nhân nam, 45 tuổi, giáo viên,</text>
+    <text x="20" y="83" font-family="Arial" font-size="11" fill="#374151">bị đau bụng vùng thượng vị kéo dài</text>
+    <text x="20" y="98" font-family="Arial" font-size="11" fill="#374151">2 tuần, hãy phân tích..."</text>
+    
+    <!-- Check icons -->
+    <circle cx="270" cy="70" r="15" fill="#16a34a"/>
+    <text x="270" y="78" text-anchor="middle" font-family="Arial" font-size="14" fill="white">✓</text>
+  </g>
+  
+  <!-- Personal Information types to avoid -->
+  <g transform="translate(100, 400)">
+    <rect x="0" y="0" width="600" height="120" rx="15" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#d97706">
+      🚫 Thông tin TUYỆT ĐỐI không được nhập vào AI công cộng
+    </text>
+    
+    <!-- Left column -->
+    <g transform="translate(30, 40)">
+      <text x="0" y="15" font-family="Arial" font-size="12" font-weight="bold" fill="#92400e">Thông tin cá nhân:</text>
+      <text x="0" y="35" font-family="Arial" font-size="11" fill="#374151">• Họ tên đầy đủ</text>
+      <text x="0" y="50" font-family="Arial" font-size="11" fill="#374151">• Ngày sinh</text>
+      <text x="0" y="65" font-family="Arial" font-size="11" fill="#374151">• Số CMND/CCCD</text>
+    </g>
+    
+    <!-- Middle column -->
+    <g transform="translate(200, 40)">
+      <text x="0" y="15" font-family="Arial" font-size="12" font-weight="bold" fill="#92400e">Thông tin liên lạc:</text>
+      <text x="0" y="35" font-family="Arial" font-size="11" fill="#374151">• Số điện thoại</text>
+      <text x="0" y="50" font-family="Arial" font-size="11" fill="#374151">• Địa chỉ cụ thể</text>
+      <text x="0" y="65" font-family="Arial" font-size="11" fill="#374151">• Email cá nhân</text>
+    </g>
+    
+    <!-- Right column -->
+    <g transform="translate(400, 40)">
+      <text x="0" y="15" font-family="Arial" font-size="12" font-weight="bold" fill="#92400e">Thông tin riêng tư:</text>
+      <text x="0" y="35" font-family="Arial" font-size="11" fill="#374151">• Câu chuyện cá nhân</text>
+      <text x="0" y="50" font-family="Arial" font-size="11" fill="#374151">• Nghề nghiệp cụ thể</text>
+      <text x="0" y="65" font-family="Arial" font-size="11" fill="#374151">• Hình ảnh bệnh nhân</text>
+    </g>
+  </g>
+  
+  <!-- Legal warning -->
+  <g transform="translate(100, 540)">
+    <rect x="0" y="0" width="600" height="50" rx="10" fill="#7f1d1d" stroke="#991b1b" stroke-width="2"/>
+    <text x="300" y="20" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">
+      ⚖️ CẢNH BÁO PHÁP LÝ
+    </text>
+    <text x="300" y="40" text-anchor="middle" font-family="Arial" font-size="12" fill="white">
+      Vi phạm bảo mật thông tin bệnh nhân có thể dẫn đến hậu quả pháp lý nghiêm trọng
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,150 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgFuture" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf5ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f3e8ff;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="visionGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ddd6fe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgFuture)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#7c3aed">
+    Tương lai AI trong YHCT: Ngoài LLM
+  </text>
+  
+  <!-- Central future doctor -->
+  <g transform="translate(320, 200)">
+    <circle cx="80" cy="0" r="60" fill="url(#visionGlow)"/>
+    <circle cx="80" cy="0" r="40" fill="white" stroke="#8b5cf6" stroke-width="3"/>
+    
+    <!-- Future doctor icon -->
+    <text x="80" y="8" text-anchor="middle" font-family="Arial" font-size="24" fill="#7c3aed">👨‍⚕️</text>
+    <text x="80" y="25" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#7c3aed">
+      Lương y 4.0
+    </text>
+  </g>
+  
+  <!-- Vision 1: AI Image Analysis -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="200" height="140" rx="15" fill="white" stroke="#3b82f6" stroke-width="3"/>
+    
+    <!-- Icon -->
+    <circle cx="100" cy="40" r="20" fill="#3b82f6"/>
+    <text x="100" y="48" text-anchor="middle" font-family="Arial" font-size="16" fill="white">👁️</text>
+    
+    <!-- Title -->
+    <text x="100" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1e40af">
+      AI Phân tích Hình ảnh
+    </text>
+    
+    <!-- Details -->
+    <text x="100" y="90" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      • Phân tích ảnh lưỡi
+    </text>
+    <text x="100" y="105" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      • Chẩn đoán qua ảnh da
+    </text>
+    <text x="100" y="120" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      • Hỗ trợ vọng chẩn
+    </text>
+  </g>
+  
+  <!-- Vision 2: Big Data Analysis -->
+  <g transform="translate(300, 350)">
+    <rect x="0" y="0" width="200" height="140" rx="15" fill="white" stroke="#10b981" stroke-width="3"/>
+    
+    <!-- Icon -->
+    <circle cx="100" cy="40" r="20" fill="#10b981"/>
+    <text x="100" y="48" text-anchor="middle" font-family="Arial" font-size="16" fill="white">📊</text>
+    
+    <!-- Title -->
+    <text x="100" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#059669">
+      AI Phân tích Dữ liệu
+    </text>
+    
+    <!-- Details -->
+    <text x="100" y="90" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      • Tìm quy luật từ ngàn hồ sơ
+    </text>
+    <text x="100" y="105" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      • Khám phá hiệu quả bài thuốc
+    </text>
+    <text x="100" y="120" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      • Dữ liệu đã ẩn danh
+    </text>
+  </g>
+  
+  <!-- Vision 3: Personalized Treatment -->
+  <g transform="translate(550, 100)">
+    <rect x="0" y="0" width="200" height="140" rx="15" fill="white" stroke="#f59e0b" stroke-width="3"/>
+    
+    <!-- Icon -->
+    <circle cx="100" cy="40" r="20" fill="#f59e0b"/>
+    <text x="100" y="48" text-anchor="middle" font-family="Arial" font-size="16" fill="white">🎯</text>
+    
+    <!-- Title -->
+    <text x="100" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#d97706">
+      AI Cá nhân hóa
+    </text>
+    
+    <!-- Details -->
+    <text x="100" y="90" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      • Phác đồ "may đo" riêng
+    </text>
+    <text x="100" y="105" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      • Dựa trên cơ địa cá thể
+    </text>
+    <text x="100" y="120" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      • Phù hợp lối sống
+    </text>
+  </g>
+  
+  <!-- Connecting lines to center -->
+  <path d="M 250 170 L 320 200" stroke="#3b82f6" stroke-width="3" stroke-dasharray="5,5"/>
+  <path d="M 300 420 L 350 250" stroke="#10b981" stroke-width="3" stroke-dasharray="5,5"/>
+  <path d="M 550 170 L 480 200" stroke="#f59e0b" stroke-width="3" stroke-dasharray="5,5"/>
+  
+  <!-- Challenges and Opportunities -->
+  <g transform="translate(50, 520)">
+    <rect x="0" y="0" width="300" height="70" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+    <text x="150" y="20" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#dc2626">
+      🚧 Thách thức
+    </text>
+    <text x="150" y="38" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      • Cần dữ liệu lớn và chất lượng YHCT
+    </text>
+    <text x="150" y="53" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      • Vấn đề bảo mật và pháp lý
+    </text>
+  </g>
+  
+  <g transform="translate(450, 520)">
+    <rect x="0" y="0" width="300" height="70" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <text x="150" y="20" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#16a34a">
+      🌟 Cơ hội
+    </text>
+    <text x="150" y="38" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      • Chuẩn hóa và hiện đại hóa YHCT
+    </text>
+    <text x="150" y="53" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      • Đưa YHCT Việt Nam ra thế giới
+    </text>
+  </g>
+  
+  <!-- Inspiration quote -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="600" height="50" rx="25" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+    <text x="300" y="20" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#4338ca">
+      💡 "Người thầy thuốc tương lai không phải là người biết tuốt,
+    </text>
+    <text x="300" y="38" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#4338ca">
+      mà là người biết cách hỏi đúng câu hỏi"
+    </text>
+  </g>
+</svg>

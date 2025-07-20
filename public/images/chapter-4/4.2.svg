@@ -1,0 +1,12 @@
+<!-- Illustration 4.2: Chứng Mất Ngủ (Thất miên) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+    <defs>
+        <style>.cls-1{fill:#e53e3e;}.cls-2{fill:#4299e1;}.cls-3{font-family:sans-serif;font-size:14px;fill:white;}</style>
+    </defs>
+    <path class="cls-1" d="M150,120 A40,40 0 0,1 250,120 L250,180 L150,180 Z" />
+    <text class="cls-3" x="180" y="155">Tâm Hỏa</text>
+    <path class="cls-2" d="M150,80 A40,40 0 0,0 250,80 L250,20 L150,20 Z" />
+    <text class="cls-3" x="175" y="55">Thận Thủy</text>
+    <path d="M190,85 v25" stroke="#e53e3e" stroke-width="3" stroke-dasharray="5,3" />
+    <path d="M210,115 v-25" stroke="#4299e1" stroke-width="3" stroke-dasharray="5,3" />
+</svg>

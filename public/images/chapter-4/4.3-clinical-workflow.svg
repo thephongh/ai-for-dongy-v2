@@ -1,0 +1,90 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f2fe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e40af">
+    Quy trình làm việc với AI trong Lâm sàng
+  </text>
+  
+  <!-- Step 1: Doctor Examination -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="160" height="120" rx="10" fill="url(#cardGradient)" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="80" cy="40" r="20" fill="#3b82f6"/>
+    <text x="80" y="47" text-anchor="middle" font-family="Arial" font-size="20" fill="white">👨‍⚕️</text>
+    <text x="80" y="75" text-anchor="middle" font-family="Arial" font-size="12" fill="#1e40af">Bước 1</text>
+    <text x="80" y="90" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">Lương y khám</text>
+    <text x="80" y="105" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">Tứ chẩn</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M 220 160 L 260 160" stroke="#3b82f6" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 2: AI Analysis -->
+  <g transform="translate(270, 100)">
+    <rect x="0" y="0" width="160" height="120" rx="10" fill="url(#cardGradient)" stroke="#10b981" stroke-width="2"/>
+    <circle cx="80" cy="40" r="20" fill="#10b981"/>
+    <text x="80" y="47" text-anchor="middle" font-family="Arial" font-size="20" fill="white">🤖</text>
+    <text x="80" y="75" text-anchor="middle" font-family="Arial" font-size="12" fill="#059669">Bước 2</text>
+    <text x="80" y="90" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">AI phân tích</text>
+    <text x="80" y="105" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">Tham khảo</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M 440 160 L 480 160" stroke="#10b981" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 3: Comparison -->
+  <g transform="translate(490, 100)">
+    <rect x="0" y="0" width="160" height="120" rx="10" fill="url(#cardGradient)" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="80" cy="40" r="20" fill="#f59e0b"/>
+    <text x="80" y="47" text-anchor="middle" font-family="Arial" font-size="20" fill="white">⚖️</text>
+    <text x="80" y="75" text-anchor="middle" font-family="Arial" font-size="12" fill="#d97706">Bước 3</text>
+    <text x="80" y="90" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">Đối chiếu</text>
+    <text x="80" y="105" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">Kinh nghiệm</text>
+  </g>
+  
+  <!-- Arrow 3 (downward) -->
+  <path d="M 570 230 L 570 270" stroke="#f59e0b" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 4: Final Decision -->
+  <g transform="translate(490, 280)">
+    <rect x="0" y="0" width="160" height="120" rx="10" fill="url(#cardGradient)" stroke="#dc2626" stroke-width="2"/>
+    <circle cx="80" cy="40" r="20" fill="#dc2626"/>
+    <text x="80" y="47" text-anchor="middle" font-family="Arial" font-size="20" fill="white">✅</text>
+    <text x="80" y="75" text-anchor="middle" font-family="Arial" font-size="12" fill="#dc2626">Bước 4</text>
+    <text x="80" y="90" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">Quyết định</text>
+    <text x="80" y="105" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">Cuối cùng</text>
+  </g>
+  
+  <!-- Bottom note -->
+  <g transform="translate(50, 450)">
+    <rect x="0" y="0" width="700" height="80" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+    <text x="350" y="25" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#92400e">
+      Lưu ý quan trọng
+    </text>
+    <text x="350" y="45" text-anchor="middle" font-family="Arial" font-size="12" fill="#92400e">
+      Lương y luôn là người đưa ra quyết định cuối cùng
+    </text>
+    <text x="350" y="65" text-anchor="middle" font-family="Arial" font-size="12" fill="#92400e">
+      AI chỉ đóng vai trò người cố vấn hỗ trợ
+    </text>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,64 @@
+{
+  "id": "chapter-3-quiz",
+  "chapterId": "chapter-3",
+  "timeLimit": 20,
+  "passingScore": 75,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Kỹ thuật 'Few-Shot Prompting' có nghĩa là gì?",
+      "options": [
+        "Chỉ hỏi AI những câu hỏi ngắn.",
+        "Yêu cầu AI suy nghĩ từng bước.",
+        "Cung cấp cho AI 1-2 ví dụ mẫu về kết quả bạn mong muốn.",
+        "Ra lệnh cho AI đóng một vai nhân vật chi tiết."
+      ],
+      "correctAnswer": "Cung cấp cho AI 1-2 ví dụ mẫu về kết quả bạn mong muốn.",
+      "explanation": "Few-shot prompting là cách 'dạy' AI bằng cách đưa ra ví dụ cụ thể, giúp nó bắt chước chính xác định dạng và văn phong bạn yêu cầu.",
+      "points": 25
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Tại sao nên yêu cầu AI 'suy nghĩ từng bước một' (Chain-of-Thought) khi giải quyết vấn đề phức tạp?",
+      "options": [
+        "Để câu trả lời của AI dài hơn.",
+        "Để làm cho AI hoạt động chậm lại.",
+        "Để buộc AI phải tư duy một cách logic và có cấu trúc, từ đó giảm sai sót.",
+        "Đây chỉ là một cách nói cho vui, không có tác dụng thực tế."
+      ],
+      "correctAnswer": "Để buộc AI phải tư duy một cách logic và có cấu trúc, từ đó giảm sai sót.",
+      "explanation": "Kỹ thuật Chuỗi tư duy giúp AI phân rã vấn đề phức tạp thành các bước nhỏ, tăng độ chính xác và cho phép bạn kiểm tra logic của nó.",
+      "points": 25
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Xây dựng một 'Persona' (Nhân vật) chi tiết cho AI nhằm mục đích gì?",
+      "options": [
+        "Chỉ để làm cho prompt trông chuyên nghiệp hơn.",
+        "Để câu trả lời của AI có 'hồn', văn phong và kiến thức phù hợp với nhân vật được giao.",
+        "Để kiểm tra khả năng sáng tạo của AI.",
+        "Để giới hạn kiến thức của AI."
+      ],
+      "correctAnswer": "Để câu trả lời của AI có 'hồn', văn phong và kiến thức phù hợp với nhân vật được giao.",
+      "explanation": "Persona chi tiết giúp định hướng AI tạo ra các câu trả lời với giọng điệu, phong cách và góc nhìn chuyên môn phù hợp nhất với yêu cầu.",
+      "points": 25
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "Quá trình 'Tinh chỉnh lặp lại' (Iterative Refinement) nghĩa là gì?",
+      "options": [
+        "Xóa đi viết lại prompt nhiều lần cho đến khi hoàn hảo.",
+        "Xem câu trả lời đầu tiên của AI là bản nháp và dùng các lệnh tiếp theo để chỉnh sửa nó.",
+        "Hỏi cùng một câu hỏi trên nhiều công cụ AI khác nhau.",
+        "Chỉ chấp nhận câu trả lời đầu tiên của AI."
+      ],
+      "correctAnswer": "Xem câu trả lời đầu tiên của AI là bản nháp và dùng các lệnh tiếp theo để chỉnh sửa nó.",
+      "explanation": "Đây là một quy trình làm việc hiệu quả, coi việc tương tác với AI là một cuộc đối thoại để dần dần đi đến kết quả mong muốn.",
+      "points": 25
+    }
+  ]
+}

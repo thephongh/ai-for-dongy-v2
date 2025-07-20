@@ -1,0 +1,8 @@
+<!-- Illustration 4.3: Đau Thần Kinh Tọa (Tọa cốt phong) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+    <path d="M220 20 C 200 40, 200 80, 210 100 C 220 120, 200 140, 190 180" fill="none" stroke="#a0aec0" stroke-width="10"/>
+    <path d="M220 20 C 200 40, 200 80, 210 100 C 220 120, 200 140, 190 180" fill="none" stroke="#4299e1" stroke-width="3" stroke-dasharray="5,3"/>
+    <circle cx="218" cy="45" r="5" fill="#e53e3e"/>
+    <circle cx="205" cy="80" r="5" fill="#e53e3e"/>
+    <circle cx="200" cy="150" r="5" fill="#e53e3e"/>
+</svg>

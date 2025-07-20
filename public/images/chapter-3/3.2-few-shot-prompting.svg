@@ -1,0 +1,123 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 36px; font-weight: 700; fill: #1e293b; text-anchor: start; line-height: 1.2; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 32px; font-weight: 700; fill: #1e293b; text-anchor: start; }
+      .brand { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 24px; font-weight: 600; fill: #dc2626; text-anchor: start; }
+    </style>
+    
+    <!-- Background gradient -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f1f5f9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg-gradient)"/>
+  
+  <!-- Decorative shapes -->
+  <polygon points="50,80 70,50 90,80" fill="#e2e8f0" opacity="0.6"/>
+  <polygon points="720,100 740,70 760,100" fill="#fecaca" opacity="0.7"/>
+  <polygon points="60,420 80,400 100,420" fill="#fecaca" opacity="0.6"/>
+  <polygon points="700,450 720,430 740,450" fill="#e2e8f0" opacity="0.5"/>
+  
+  <!-- Title Text -->
+  <text x="50" y="80" class="title">What is the Few-Shot</text>
+  <text x="50" y="125" class="title">Prompting Technique?</text>
+  <text x="50" y="170" class="subtitle">How to Use It?</text>
+  
+  <!-- Central Robot -->
+  <g transform="translate(400, 320)">
+    <!-- Robot body -->
+    <ellipse cx="0" cy="0" rx="60" ry="80" fill="#cbd5e1" stroke="#475569" stroke-width="3"/>
+    
+    <!-- Robot head -->
+    <circle cx="0" cy="-60" r="45" fill="#e2e8f0" stroke="#475569" stroke-width="3"/>
+    
+    <!-- Face -->
+    <circle cx="-15" cy="-65" r="8" fill="#1f2937"/>
+    <circle cx="15" cy="-65" r="8" fill="#1f2937"/>
+    <ellipse cx="0" cy="-45" rx="20" ry="12" fill="#ec4899" rx="10"/>
+    
+    <!-- Arms -->
+    <circle cx="-80" cy="-20" r="15" fill="#6b7280"/>
+    <circle cx="80" cy="-20" r="15" fill="#6b7280"/>
+    <rect x="-95" y="-25" width="30" height="10" fill="#475569" rx="5"/>
+    <rect x="65" y="-25" width="30" height="10" fill="#475569" rx="5"/>
+    
+    <!-- Hands pointing -->
+    <g transform="translate(-80, -20)">
+      <rect x="-8" y="-3" width="16" height="6" fill="#94a3b8" rx="3"/>
+      <rect x="8" y="-8" width="12" height="4" fill="#94a3b8" rx="2"/>
+      <rect x="8" y="-2" width="12" height="4" fill="#94a3b8" rx="2"/>
+      <rect x="8" y="4" width="12" height="4" fill="#94a3b8" rx="2"/>
+    </g>
+    
+    <g transform="translate(80, -20)">
+      <rect x="-8" y="-3" width="16" height="6" fill="#94a3b8" rx="3"/>
+      <rect x="-20" y="-8" width="12" height="4" fill="#94a3b8" rx="2"/>
+      <rect x="-20" y="-2" width="12" height="4" fill="#94a3b8" rx="2"/>
+      <rect x="-20" y="4" width="12" height="4" fill="#94a3b8" rx="2"/>
+    </g>
+    
+    <!-- Chest panel -->
+    <circle cx="0" cy="10" r="25" fill="#475569" stroke="#1f2937" stroke-width="2"/>
+    <circle cx="0" cy="10" r="15" fill="#6b7280"/>
+    
+    <!-- Control panels -->
+    <rect x="-10" y="40" width="20" height="8" fill="#1f2937" rx="2"/>
+    <rect x="-10" y="52" width="20" height="8" fill="#1f2937" rx="2"/>
+  </g>
+  
+  <!-- Left connected element (brain/AI) -->
+  <g transform="translate(150, 250)">
+    <rect x="-40" y="-25" width="80" height="50" fill="#ec4899" opacity="0.8" rx="25"/>
+    <!-- Connection nodes -->
+    <circle cx="-30" cy="-15" r="4" fill="#be185d"/>
+    <circle cx="-10" cy="-15" r="4" fill="#be185d"/>
+    <circle cx="10" cy="-15" r="4" fill="#be185d"/>
+    <circle cx="30" cy="-15" r="4" fill="#be185d"/>
+    <!-- Connection line to robot -->
+    <line x1="40" y1="0" x2="170" y2="50" stroke="#ec4899" stroke-width="4" opacity="0.7"/>
+  </g>
+  
+  <!-- Right connected element (data/examples) -->
+  <g transform="translate(650, 200)">
+    <rect x="-50" y="-30" width="100" height="60" fill="#ec4899" opacity="0.8" rx="30"/>
+    <!-- Data visualization -->
+    <circle cx="0" cy="0" r="20" fill="#be185d" opacity="0.6"/>
+    <circle cx="0" cy="0" r="12" fill="#be185d" opacity="0.8"/>
+    <circle cx="0" cy="0" r="6" fill="#be185d"/>
+    <!-- Connection line to robot -->
+    <line x1="-50" y1="30" x2="-200" y2="100" stroke="#ec4899" stroke-width="4" opacity="0.7"/>
+  </g>
+  
+  <!-- Bottom connected element (output) -->
+  <g transform="translate(550, 400)">
+    <rect x="-60" y="-20" width="120" height="40" fill="#ec4899" opacity="0.8" rx="20"/>
+    <!-- Output representation -->
+    <rect x="-40" y="-10" width="15" height="20" fill="#be185d" rx="2"/>
+    <rect x="-20" y="-10" width="15" height="20" fill="#be185d" rx="2"/>
+    <rect x="0" y="-10" width="15" height="20" fill="#be185d" rx="2"/>
+    <rect x="20" y="-10" width="15" height="20" fill="#be185d" rx="2"/>
+    <!-- Connection line to robot -->
+    <line x1="-60" y1="-20" x2="-120" y2="-60" stroke="#ec4899" stroke-width="4" opacity="0.7"/>
+  </g>
+  
+  <!-- Brand -->
+  <g transform="translate(50, 450)">
+    <rect x="0" y="-15" width="30" height="30" fill="#dc2626" rx="5"/>
+    <text x="10" y="5" class="brand" font-size="16" fill="white" text-anchor="middle">Z</text>
+    <text x="45" y="5" class="brand">zeo</text>
+  </g>
+  
+  <!-- Explanation text -->
+  <rect x="50" y="220" width="280" height="120" fill="rgba(255, 255, 255, 0.9)" stroke="#e2e8f0" stroke-width="2" rx="12"/>
+  <text x="70" y="250" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 16px; font-weight: 500; fill: #374151;">Few-Shot Prompting:</text>
+  <text x="70" y="275" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; fill: #6b7280;">• Provide 2-5 examples</text>
+  <text x="70" y="295" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; fill: #6b7280;">• Show input-output pairs</text>
+  <text x="70" y="315" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; fill: #6b7280;">• Guide AI behavior</text>
+  <text x="70" y="335" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; fill: #6b7280;">• Improve accuracy</text>
+</svg>

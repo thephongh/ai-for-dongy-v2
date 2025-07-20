@@ -1,0 +1,99 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf5ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f3e8ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sectionCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fefefe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgPurple)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#7c3aed">
+    AI Hỗ trợ Quản lý Phòng khám YHCT
+  </text>
+  
+  <!-- Central clinic building -->
+  <g transform="translate(320, 80)">
+    <rect x="0" y="0" width="160" height="120" rx="10" fill="url(#sectionCard)" stroke="#7c3aed" stroke-width="3"/>
+    <rect x="20" y="20" width="120" height="80" fill="#e9d5ff"/>
+    <text x="80" y="45" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#6b21a8">🏥</text>
+    <text x="80" y="65" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#6b21a8">Phòng khám</text>
+    <text x="80" y="80" text-anchor="middle" font-family="Arial" font-size="14" fill="#6b21a8">YHCT</text>
+  </g>
+  
+  <!-- Marketing section -->
+  <g transform="translate(50, 250)">
+    <rect x="0" y="0" width="200" height="120" rx="10" fill="url(#sectionCard)" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="100" cy="40" r="18" fill="#3b82f6"/>
+    <text x="100" y="47" text-anchor="middle" font-family="Arial" font-size="16" fill="white">📢</text>
+    <text x="100" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1e40af">Marketing & Thương hiệu</text>
+    <text x="100" y="85" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">• Nội dung website</text>
+    <text x="100" y="100" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">• Bài đăng mạng xã hội</text>
+    <text x="100" y="115" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">• Kế hoạch quảng cáo</text>
+  </g>
+  
+  <!-- Customer Care section -->
+  <g transform="translate(300, 250)">
+    <rect x="0" y="0" width="200" height="120" rx="10" fill="url(#sectionCard)" stroke="#10b981" stroke-width="2"/>
+    <circle cx="100" cy="40" r="18" fill="#10b981"/>
+    <text x="100" y="47" text-anchor="middle" font-family="Arial" font-size="16" fill="white">💬</text>
+    <text x="100" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#059669">Chăm sóc Khách hàng</text>
+    <text x="100" y="85" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">• Tin nhắn tái khám</text>
+    <text x="100" y="100" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">• Trả lời đánh giá</text>
+    <text x="100" y="115" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">• Hỏi thăm sức khỏe</text>
+  </g>
+  
+  <!-- Operations section -->
+  <g transform="translate(550, 250)">
+    <rect x="0" y="0" width="200" height="120" rx="10" fill="url(#sectionCard)" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="100" cy="40" r="18" fill="#f59e0b"/>
+    <text x="100" y="47" text-anchor="middle" font-family="Arial" font-size="16" fill="white">📊</text>
+    <text x="100" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#d97706">Tối ưu Vận hành</text>
+    <text x="100" y="85" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">• Mẫu hồ sơ bệnh án</text>
+    <text x="100" y="100" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">• Báo cáo thống kê</text>
+    <text x="100" y="115" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">• Phân tích hiệu quả</text>
+  </g>
+  
+  <!-- Arrows pointing to clinic -->
+  <path d="M 250 310 L 320 200" stroke="#3b82f6" stroke-width="2" fill="none" marker-end="url(#arrowBlue)"/>
+  <path d="M 400 310 L 400 210" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+  <path d="M 550 310 L 480 200" stroke="#f59e0b" stroke-width="2" fill="none" marker-end="url(#arrowOrange)"/>
+  
+  <!-- AI Assistant -->
+  <g transform="translate(100, 420)">
+    <rect x="0" y="0" width="600" height="100" rx="15" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+    <circle cx="80" cy="50" r="25" fill="#8b5cf6"/>
+    <text x="80" y="58" text-anchor="middle" font-family="Arial" font-size="20" fill="white">🤖</text>
+    
+    <text x="120" y="35" font-family="Arial" font-size="16" font-weight="bold" fill="#4c1d95">AI Trợ lý Toàn năng</text>
+    <text x="120" y="55" font-family="Arial" font-size="12" fill="#475569">Tiết kiệm thời gian • Nâng cao hiệu quả • Chuyên nghiệp hóa dịch vụ</text>
+    <text x="120" y="75" font-family="Arial" font-size="12" fill="#475569">Giúp lương y tập trung vào việc chăm sóc bệnh nhân thay vì công việc giấy tờ</text>
+  </g>
+  
+  <!-- Benefits box -->
+  <g transform="translate(100, 540)">
+    <rect x="0" y="0" width="600" height="40" rx="8" fill="#ecfccb" stroke="#65a30d" stroke-width="1"/>
+    <text x="300" y="25" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#365314">
+      ⚡ Tăng hiệu quả vận hành 3x • Giảm 70% thời gian làm giấy tờ • Tăng 50% sự hài lòng của bệnh nhân
+    </text>
+  </g>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0 0, 8 4, 0 8" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0 0, 8 4, 0 8" fill="#10b981"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0 0, 8 4, 0 8" fill="#f59e0b"/>
+    </marker>
+  </defs>
+</svg>

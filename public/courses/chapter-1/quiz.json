@@ -1,0 +1,64 @@
+{
+  "id": "chapter-1-quiz",
+  "chapterId": "chapter-1",
+  "timeLimit": 20,
+  "passingScore": 75,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Theo nội dung chương 1, vai trò chính của AI đối với lương y là gì?",
+      "options": [
+        "Thay thế hoàn toàn công việc của lương y trong tương lai.",
+        "Một công cụ hỗ trợ giúp lương y nghiên cứu, soạn thảo và tham khảo thông tin hiệu quả hơn.",
+        "Tự động bắt mạch và kê đơn mà không cần sự can thiệp của con người.",
+        "Chỉ dùng để dịch thuật tài liệu y khoa."
+      ],
+      "correctAnswer": "Một công cụ hỗ trợ giúp lương y nghiên cứu, soạn thảo và tham khảo thông tin hiệu quả hơn.",
+      "explanation": "AI được định vị là một trợ lý đắc lực để nâng cao hiệu quả công việc, không phải để thay thế vai trò cốt lõi và trách nhiệm của người thầy thuốc.",
+      "points": 25
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Công việc nào sau đây AI KHÔNG THỂ thay thế được lương y?",
+      "options": [
+        "Tóm tắt một nghiên cứu y khoa mới.",
+        "Soạn thảo một bài đăng giới thiệu phòng khám.",
+        "Thực hiện Vọng - Văn - Vấn - Thiết để chẩn đoán lâm sàng.",
+        "Liệt kê các bài thuốc liên quan đến một hội chứng."
+      ],
+      "correctAnswer": "Thực hiện Vọng - Văn - Vấn - Thiết để chẩn đoán lâm sàng.",
+      "explanation": "AI không có giác quan, sự đồng cảm hay trực giác lâm sàng để thực hiện Tứ chẩn, vốn là kỹ năng cốt lõi và không thể thay thế của người thầy thuốc.",
+      "points": 25
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Trong phép so sánh 'Hệ Thống Y Khoa AI', Machine Learning (Học Máy) được ví với điều gì?",
+      "options": [
+        "Toàn bộ bệnh viện.",
+        "Thư viện chứa tất cả sách vở.",
+        "Quá trình một lương y tích lũy kinh nghiệm qua hàng vạn ca bệnh.",
+        "Một loại thuốc đặc trị."
+      ],
+      "correctAnswer": "Quá trình một lương y tích lũy kinh nghiệm qua hàng vạn ca bệnh.",
+      "explanation": "Machine Learning là quá trình máy tính 'học' từ dữ liệu để cải thiện khả năng của mình, tương tự như một lương y học hỏi qua kinh nghiệm thực tế.",
+      "points": 25
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "Lầm tưởng phổ biến nào về AI đã được đề cập trong chương học?",
+      "options": [
+        "AI rất dễ sử dụng và có nhiều công cụ miễn phí.",
+        "AI chỉ là một công cụ hỗ trợ.",
+        "AI quá phức tạp và sẽ thay thế hoàn toàn công việc của lương y.",
+        "AI có thể giúp tiết kiệm thời gian."
+      ],
+      "correctAnswer": "AI quá phức tạp và sẽ thay thế hoàn toàn công việc của lương y.",
+      "explanation": "Chương 1 đã phá bỏ lầm tưởng này bằng cách khẳng định AI có giao diện đơn giản và vai trò của nó là hỗ trợ, không phải thay thế.",
+      "points": 25
+    }
+  ]
+}

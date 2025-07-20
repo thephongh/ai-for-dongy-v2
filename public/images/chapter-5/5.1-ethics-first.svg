@@ -1,0 +1,121 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgEthics" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef2f2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fee2e2;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="heartGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fecaca;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgEthics)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#dc2626">
+    Nguyên tắc Đạo đức Hàng đầu: Lợi ích Bệnh nhân Trên hết
+  </text>
+  
+  <!-- Large central heart -->
+  <g transform="translate(300, 150)">
+    <!-- Heart shape -->
+    <path d="M 100 40 
+             C 80 20, 40 20, 40 60 
+             C 40 100, 100 140, 100 140 
+             C 100 140, 160 100, 160 60 
+             C 160 20, 120 20, 100 40 Z" 
+          fill="url(#heartGradient)" 
+          stroke="#b91c1c" 
+          stroke-width="3"/>
+    
+    <!-- Patient icon inside heart -->
+    <circle cx="100" cy="80" r="12" fill="white"/>
+    <text x="100" y="87" text-anchor="middle" font-family="Arial" font-size="18" fill="#dc2626">👨‍⚕️</text>
+    
+    <!-- Caring hands around heart -->
+    <g opacity="0.8">
+      <ellipse cx="70" cy="120" rx="20" ry="8" fill="#fca5a5" transform="rotate(-30 70 120)"/>
+      <ellipse cx="130" cy="120" rx="20" ry="8" fill="#fca5a5" transform="rotate(30 130 120)"/>
+    </g>
+  </g>
+  
+  <!-- Three principles around the heart -->
+  <!-- Left: Do No Harm -->
+  <g transform="translate(50, 300)">
+    <rect x="0" y="0" width="180" height="100" rx="15" fill="white" stroke="#ef4444" stroke-width="2"/>
+    <circle cx="90" cy="35" r="15" fill="#ef4444"/>
+    <text x="90" y="42" text-anchor="middle" font-family="Arial" font-size="14" fill="white">🛡️</text>
+    <text x="90" y="60" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#dc2626">
+      Không gây hại
+    </text>
+    <text x="90" y="78" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      Luôn đặt an toàn
+    </text>
+    <text x="90" y="92" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      bệnh nhân lên đầu
+    </text>
+  </g>
+  
+  <!-- Center: Transparency -->
+  <g transform="translate(310, 300)">
+    <rect x="0" y="0" width="180" height="100" rx="15" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="90" cy="35" r="15" fill="#f59e0b"/>
+    <text x="90" y="42" text-anchor="middle" font-family="Arial" font-size="14" fill="white">👁️</text>
+    <text x="90" y="60" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#d97706">
+      Minh bạch
+    </text>
+    <text x="90" y="78" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      Giải thích rõ ràng
+    </text>
+    <text x="90" y="92" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      về vai trò của AI
+    </text>
+  </g>
+  
+  <!-- Right: Responsibility -->
+  <g transform="translate(570, 300)">
+    <rect x="0" y="0" width="180" height="100" rx="15" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="90" cy="35" r="15" fill="#3b82f6"/>
+    <text x="90" y="42" text-anchor="middle" font-family="Arial" font-size="14" fill="white">⚖️</text>
+    <text x="90" y="60" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1e40af">
+      Trách nhiệm
+    </text>
+    <text x="90" y="78" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      Lương y chịu trách
+    </text>
+    <text x="90" y="92" text-anchor="middle" font-family="Arial" font-size="11" fill="#374151">
+      nhiệm cuối cùng
+    </text>
+  </g>
+  
+  <!-- Connecting lines to heart -->
+  <path d="M 140 340 L 350 220" stroke="#ef4444" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M 400 340 L 400 290" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M 660 340 L 450 220" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- AI Caution Box -->
+  <g transform="translate(100, 450)">
+    <rect x="0" y="0" width="600" height="80" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="40" cy="40" r="15" fill="#f59e0b"/>
+    <text x="40" y="47" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">⚠️</text>
+    
+    <text x="70" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="#92400e">
+      Lưu ý quan trọng về việc sử dụng AI
+    </text>
+    <text x="70" y="50" font-family="Arial" font-size="12" fill="#92400e">
+      • AI là công cụ hỗ trợ, không thay thế được sự cảm thông và kinh nghiệm của lương y
+    </text>
+    <text x="70" y="65" font-family="Arial" font-size="12" fill="#92400e">
+      • Luôn tự hỏi: "Việc dùng AI ở đây có thực sự mang lại lợi ích cho bệnh nhân?"
+    </text>
+  </g>
+  
+  <!-- Hippocratic Oath Reference -->
+  <g transform="translate(150, 550)">
+    <text x="250" y="15" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic" fill="#6b7280">
+      "Trước tiên, không gây hại" - Hippocrates (460-370 TCN)
+    </text>
+  </g>
+</svg>

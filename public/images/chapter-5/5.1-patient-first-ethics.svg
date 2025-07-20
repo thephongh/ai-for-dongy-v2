@@ -1,0 +1,140 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef7f7"/>
+      <stop offset="100%" style="stop-color:#fecaca"/>
+    </linearGradient>
+    <linearGradient id="heartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <radialGradient id="heartGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fecaca" stop-opacity="0.8"/>
+      <stop offset="100%" style="stop-color:#fecaca" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+  
+  <!-- Large heart surrounding patient -->
+  <g transform="translate(300, 200)">
+    <!-- Heart glow effect -->
+    <ellipse cx="100" cy="100" rx="150" ry="120" fill="url(#heartGlow)"/>
+    
+    <!-- Main heart shape -->
+    <path d="M100 80 C80 60, 40 60, 40 100 C40 140, 100 180, 100 180 C100 180, 160 140, 160 100 C160 60, 120 60, 100 80 Z" 
+          fill="url(#heartGradient)" stroke="#b91c1c" stroke-width="4"/>
+    
+    <!-- Heart pulse animation -->
+    <path d="M100 80 C80 60, 40 60, 40 100 C40 140, 100 180, 100 180 C100 180, 160 140, 160 100 C160 60, 120 60, 100 80 Z" 
+          fill="none" stroke="#f87171" stroke-width="4" opacity="0.8">
+      <animate attributeName="stroke-width" values="4;8;4" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Patient figure in center -->
+    <g transform="translate(70, 80)">
+      <!-- Patient on bed -->
+      <rect x="10" y="40" width="40" height="8" fill="#8b5cf6" rx="4"/>
+      
+      <!-- Patient body -->
+      <circle cx="30" cy="25" r="8" fill="#fbbf24"/>
+      <rect x="25" y="33" width="10" height="15" fill="#3b82f6"/>
+      <path d="M20 40 L25 48 M35 40 L40 48" stroke="#1f2937" stroke-width="2"/>
+      
+      <!-- Peaceful expression -->
+      <circle cx="27" cy="22" r="1" fill="#1f2937"/>
+      <circle cx="33" cy="22" r="1" fill="#1f2937"/>
+      <path d="M27 28 Q30 30 33 28" stroke="#22c55e" stroke-width="1" fill="none"/>
+      
+      <!-- Pillow -->
+      <ellipse cx="30" cy="20" rx="12" ry="4" fill="#e5e7eb"/>
+    </g>
+    
+    <!-- Doctor's hands protectively over patient -->
+    <g transform="translate(85, 60)">
+      <!-- Left hand -->
+      <ellipse cx="10" cy="25" rx="8" ry="12" fill="#fbbf24" transform="rotate(-20 10 25)"/>
+      <circle cx="8" cy="20" r="2" fill="#fbbf24"/>
+      <circle cx="12" cy="18" r="2" fill="#fbbf24"/>
+      <circle cx="14" cy="22" r="2" fill="#fbbf24"/>
+      <circle cx="10" cy="25" r="2" fill="#fbbf24"/>
+      
+      <!-- Right hand -->
+      <ellipse cx="20" cy="25" rx="8" ry="12" fill="#fbbf24" transform="rotate(20 20 25)"/>
+      <circle cx="18" cy="18" r="2" fill="#fbbf24"/>
+      <circle cx="22" cy="20" r="2" fill="#fbbf24"/>
+      <circle cx="24" cy="22" r="2" fill="#fbbf24"/>
+      <circle cx="20" cy="25" r="2" fill="#fbbf24"/>
+    </g>
+    
+    <!-- Protective aura -->
+    <circle cx="100" cy="130" r="60" fill="none" stroke="#22c55e" stroke-width="3" opacity="0.7" stroke-dasharray="8,8">
+      <animate attributeName="r" values="60;75;60" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Four ethical principles as large icons around the heart -->
+  <!-- Top: Do no harm -->
+  <g transform="translate(350, 80)">
+    <circle cx="50" cy="50" r="40" fill="#dcfce7" stroke="#22c55e" stroke-width="4"/>
+    <text x="50" y="60" text-anchor="middle" font-size="32" fill="#166534">🛡️</text>
+  </g>
+  
+  <!-- Right: Benefit patient -->
+  <g transform="translate(550, 250)">
+    <circle cx="50" cy="50" r="40" fill="#fef3c7" stroke="#f59e0b" stroke-width="4"/>
+    <text x="50" y="60" text-anchor="middle" font-size="32" fill="#92400e">💝</text>
+  </g>
+  
+  <!-- Bottom: Respect autonomy -->
+  <g transform="translate(350, 420)">
+    <circle cx="50" cy="50" r="40" fill="#dbeafe" stroke="#3b82f6" stroke-width="4"/>
+    <text x="50" y="60" text-anchor="middle" font-size="32" fill="#1e40af">🤝</text>
+  </g>
+  
+  <!-- Left: Justice -->
+  <g transform="translate(150, 250)">
+    <circle cx="50" cy="50" r="40" fill="#f3e8ff" stroke="#7c3aed" stroke-width="4"/>
+    <text x="50" y="60" text-anchor="middle" font-size="32" fill="#5b21b6">⚖️</text>
+  </g>
+  
+  <!-- Central message -->
+  <g transform="translate(200, 500)">
+    <rect x="0" y="0" width="400" height="60" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="3" rx="15"/>
+    <text x="200" y="30" text-anchor="middle" font-size="24" font-weight="bold" fill="#1e293b">Bệnh Nhân Là Trung Tâm</text>
+    <text x="100" y="50" text-anchor="middle" font-size="40" fill="#ef4444">❤️</text>
+    <text x="300" y="50" text-anchor="middle" font-size="40" fill="#3b82f6">🤖</text>
+    <text x="200" y="50" text-anchor="middle" font-size="24" fill="#1e293b">></text>
+  </g>
+  
+  <!-- Connecting lines from principles to heart (subtle) -->
+  <g stroke="#cbd5e1" stroke-width="2" opacity="0.4" stroke-dasharray="5,5">
+    <path d="M400 120 L400 200"/>
+    <path d="M560 290 L470 300"/>
+    <path d="M400 420 L400 380"/>
+    <path d="M240 290 L330 300"/>
+  </g>
+  
+  <!-- AI role indicator -->
+  <g transform="translate(50, 80)">
+    <circle cx="40" cy="40" r="35" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="3"/>
+    <circle cx="40" cy="30" r="15" fill="#3b82f6"/>
+    <circle cx="35" cy="25" r="2" fill="white"/>
+    <circle cx="45" cy="25" r="2" fill="white"/>
+    <path d="M35 35 Q40 38 45 35" stroke="white" stroke-width="1" fill="none"/>
+    <text x="40" y="65" text-anchor="middle" font-size="14" font-weight="bold" fill="#0ea5e9">Trợ Lý</text>
+  </g>
+  
+  <!-- Doctor authority indicator -->
+  <g transform="translate(650, 80)">
+    <circle cx="40" cy="40" r="35" fill="#f0fdf4" stroke="#22c55e" stroke-width="3"/>
+    <circle cx="40" cy="25" r="8" fill="#fbbf24"/>
+    <rect x="35" y="33" width="10" height="15" fill="#059669"/>
+    <circle cx="50" cy="28" r="3" fill="#ef4444"/>
+    <path d="M53 28 Q60 23 55 38" stroke="#1f2937" stroke-width="1" fill="none"/>
+    <text x="40" y="68" text-anchor="middle" font-size="14" font-weight="bold" fill="#22c55e">Quyết Định</text>
+  </g>
+</svg>

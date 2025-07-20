@@ -1,0 +1,64 @@
+{
+  "id": "chapter-6-quiz",
+  "chapterId": "chapter-6",
+  "timeLimit": 20,
+  "passingScore": 75,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "question": "Theo lộ trình 4 tuần được đề xuất, mục tiêu của Tuần 2 là gì?",
+      "options": [
+        "Chỉ làm quen với giao diện AI.",
+        "Sử dụng AI cho một công việc giấy tờ cụ thể để tiết kiệm thời gian.",
+        "Xây dựng các prompt 'tủ' của riêng mình.",
+        "Thử dùng AI cho các ca bệnh phức tạp."
+      ],
+      "correctAnswer": "Sử dụng AI cho một công việc giấy tờ cụ thể để tiết kiệm thời gian.",
+      "explanation": "Tuần 2 tập trung vào việc ứng dụng thực tế, chuyển từ 'biết' sang 'làm' bằng cách để AI giải quyết một công việc cụ thể và đo lường hiệu quả.",
+      "points": 25
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "question": "Trong tương lai, AI có thể hỗ trợ 'Vọng chẩn' bằng cách nào?",
+      "options": [
+        "Nghe giọng nói của bệnh nhân để chẩn đoán.",
+        "Phân tích hình ảnh lưỡi hoặc da của bệnh nhân.",
+        "Bắt mạch qua camera.",
+        "AI không thể hỗ trợ Vọng chẩn."
+      ],
+      "correctAnswer": "Phân tích hình ảnh lưỡi hoặc da của bệnh nhân.",
+      "explanation": "AI phân tích hình ảnh (Computer Vision) là một hướng phát triển mạnh mẽ, có tiềm năng hỗ trợ Vọng chẩn bằng cách nhận diện các dấu hiệu trên ảnh lưỡi, da.",
+      "points": 25
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "question": "Thái độ nào được khuyến khích để một lương y phát triển trong thời đại AI?",
+      "options": [
+        "Phớt lờ công nghệ và chỉ tin vào kinh nghiệm.",
+        "Học một lần duy nhất và không cần cập nhật.",
+        "Chủ động học hỏi liên tục, xem AI là công cụ và tham gia cộng đồng để trao đổi.",
+        "Chỉ sử dụng AI khi bị bắt buộc."
+      ],
+      "correctAnswer": "Chủ động học hỏi liên tục, xem AI là công cụ và tham gia cộng đồng để trao đổi.",
+      "explanation": "Vì AI phát triển không ngừng, thói quen học tập suốt đời, chủ động cập nhật và trao đổi kinh nghiệm là chìa khóa để tận dụng tốt nhất công nghệ.",
+      "points": 25
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "question": "Thông điệp cuối cùng và quan trọng nhất của khóa học là gì?",
+      "options": [
+        "AI là một công nghệ phức tạp và đầy rủi ro.",
+        "Lương y nên tập trung vào marketing bằng AI để có nhiều bệnh nhân.",
+        "AI là một trợ lý mạnh mẽ, nhưng y đức, kinh nghiệm và quyết định cuối cùng vẫn thuộc về người thầy thuốc.",
+        "Trong tương lai, lương y không cần học nhiều nữa vì đã có AI."
+      ],
+      "correctAnswer": "AI là một trợ lý mạnh mẽ, nhưng y đức, kinh nghiệm và quyết định cuối cùng vẫn thuộc về người thầy thuốc.",
+      "explanation": "Toàn bộ khóa học nhấn mạnh sự cân bằng: tận dụng sức mạnh của công cụ mới trong khi vẫn giữ vững giá trị cốt lõi và vai trò không thể thay thế của người lương y.",
+      "points": 25
+    }
+  ]
+}

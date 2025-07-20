@@ -1,0 +1,99 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdf4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dcfce7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="herbCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f9fafb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGreen)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#15803d">
+    AI Phân tích và So sánh Thảo dược
+  </text>
+  
+  <!-- Left herb: Hoàng Kỳ -->
+  <g transform="translate(80, 80)">
+    <rect x="0" y="0" width="280" height="180" rx="15" fill="url(#herbCard)" stroke="#22c55e" stroke-width="3"/>
+    
+    <!-- Herb icon -->
+    <circle cx="140" cy="50" r="25" fill="#22c55e"/>
+    <text x="140" y="58" text-anchor="middle" font-family="Arial" font-size="20" fill="white">🌿</text>
+    
+    <!-- Herb name -->
+    <text x="140" y="85" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#15803d">
+      Hoàng Kỳ (黃芪)
+    </text>
+    
+    <!-- Properties -->
+    <text x="20" y="110" font-family="Arial" font-size="12" fill="#374151">• Tính vị: Ngọt, ấm</text>
+    <text x="20" y="125" font-family="Arial" font-size="12" fill="#374151">• Quy kinh: Phế, Tỳ</text>
+    <text x="20" y="140" font-family="Arial" font-size="12" fill="#374151">• Công năng: Bổ khí thăng dương</text>
+    <text x="20" y="155" font-family="Arial" font-size="12" fill="#374151">• Hoạt chất: Astragaloside IV</text>
+  </g>
+  
+  <!-- Right herb: Đảng Sâm -->
+  <g transform="translate(440, 80)">
+    <rect x="0" y="0" width="280" height="180" rx="15" fill="url(#herbCard)" stroke="#3b82f6" stroke-width="3"/>
+    
+    <!-- Herb icon -->
+    <circle cx="140" cy="50" r="25" fill="#3b82f6"/>
+    <text x="140" y="58" text-anchor="middle" font-family="Arial" font-size="20" fill="white">🌱</text>
+    
+    <!-- Herb name -->
+    <text x="140" y="85" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#1e40af">
+      Đảng Sâm (黨蔘)
+    </text>
+    
+    <!-- Properties -->
+    <text x="20" y="110" font-family="Arial" font-size="12" fill="#374151">• Tính vị: Ngọt, bình</text>
+    <text x="20" y="125" font-family="Arial" font-size="12" fill="#374151">• Quy kinh: Phế, Tỳ</text>
+    <text x="20" y="140" font-family="Arial" font-size="12" fill="#374151">• Công năng: Bổ khí kiện tỳ</text>
+    <text x="20" y="155" font-family="Arial" font-size="12" fill="#374151">• Hoạt chất: Saponin, Polysaccharide</text>
+  </g>
+  
+  <!-- Comparison arrows -->
+  <path d="M 370 170 L 430 170" stroke="#6b7280" stroke-width="3" fill="none"/>
+  <path d="M 430 170 L 370 170" stroke="#6b7280" stroke-width="3" fill="none"/>
+  <text x="400" y="185" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#6b7280">
+    So sánh
+  </text>
+  
+  <!-- AI Analysis Section -->
+  <g transform="translate(80, 300)">
+    <rect x="0" y="0" width="640" height="220" rx="15" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+    
+    <!-- AI icon and title -->
+    <circle cx="50" cy="40" r="20" fill="#8b5cf6"/>
+    <text x="50" y="47" text-anchor="middle" font-family="Arial" font-size="16" fill="white">🤖</text>
+    <text x="80" y="47" font-family="Arial" font-size="16" font-weight="bold" fill="#4c1d95">
+      Phân tích của AI
+    </text>
+    
+    <!-- Analysis content -->
+    <text x="30" y="75" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b">Điểm giống nhau:</text>
+    <text x="30" y="95" font-family="Arial" font-size="12" fill="#475569">• Cả hai đều có tác dụng bổ khí, quy kinh Phế - Tỳ</text>
+    <text x="30" y="110" font-family="Arial" font-size="12" fill="#475569">• Đều được dùng trong các bài thuốc bổ khí như Tứ Quân Tử Thang</text>
+    
+    <text x="30" y="135" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b">Điểm khác nhau:</text>
+    <text x="30" y="155" font-family="Arial" font-size="12" fill="#475569">• Hoàng Kỳ: Tính ấm, có thể thăng dương, mạnh hơn trong bổ vệ khí</text>
+    <text x="30" y="170" font-family="Arial" font-size="12" fill="#475569">• Đảng Sâm: Tính bình, ôn hòa hơn, thích hợp cho người t허弱 lâu ngày</text>
+    
+    <text x="30" y="195" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b">Khuyến nghị lâm sàng:</text>
+    <text x="30" y="210" font-family="Arial" font-size="12" fill="#475569">Chọn Hoàng Kỳ khi cần thăng dương, chọn Đảng Sâm khi cần bổ khí ôn hòa</text>
+  </g>
+  
+  <!-- Benefit box -->
+  <g transform="translate(80, 540)">
+    <rect x="0" y="0" width="640" height="40" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+    <text x="320" y="25" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1e40af">
+      💡 AI giúp so sánh nhanh chóng và đa chiều, tiết kiệm thời gian tra cứu
+    </text>
+  </g>
+</svg>
