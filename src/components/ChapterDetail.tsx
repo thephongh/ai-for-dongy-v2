@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, CheckCircle, Clock, BookOpen, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
 import { loadChapters } from '../data/chapters';
 import type { Chapter } from '../types/course';
 import ReactMarkdown from 'react-markdown';
@@ -29,8 +29,6 @@ const ChapterDetail: React.FC = () => {
   
   const chapter = chapters.find(c => c.id === chapterId);
   const currentIndex = chapters.findIndex(c => c.id === chapterId);
-  const nextChapter = currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : null;
-  const prevChapter = currentIndex > 0 ? chapters[currentIndex - 1] : null;
 
   if (loading) {
     return (
@@ -52,7 +50,6 @@ const ChapterDetail: React.FC = () => {
   }
 
   const currentPage = chapter.pages[currentPageIndex];
-  const isLastPage = currentPageIndex === chapter.pages.length - 1;
   const isFirstPage = currentPageIndex === 0;
 
   const scrollToTop = () => {
@@ -81,9 +78,6 @@ const ChapterDetail: React.FC = () => {
     scrollToTop();
   };
 
-  const handleCompleteChapter = () => {
-    setShowQuiz(true);
-  };
 
   const renderPageContent = () => {
     if (!currentPage) return null;
@@ -92,7 +86,7 @@ const ChapterDetail: React.FC = () => {
       <div className="markdown-content" style={{ width: '100%', overflow: 'visible' }}>
         <ReactMarkdown
           components={{
-            h1: ({ children }) => null, // Hide h1 since it's already in the header
+            h1: () => null, // Hide h1 since it's already in the header
             h2: ({ children }) => <h2 style={{ fontSize: '1.25rem', fontWeight: '600', marginTop: '2rem', marginBottom: '1rem', color: 'var(--color-black)' }}>{children}</h2>,
             h3: ({ children }) => <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginTop: '1.5rem', marginBottom: '0.75rem', color: 'var(--color-black)' }}>{children}</h3>,
             p: ({ children }) => <p style={{ fontSize: '1.125rem', fontWeight: '400', lineHeight: '1.7', color: 'var(--color-gray-600)', marginBottom: '1.5rem' }}>{children}</p>,

@@ -33,7 +33,7 @@ const ChapterList: React.FC = () => {
     loadContent();
   }, []);
 
-  const getChapterStatus = (chapterId: string) => {
+  const getChapterStatus = (chapterId: string): 'completed' | 'current' | 'locked' => {
     const chapterProgress = progress.find(p => p.chapterId === chapterId);
     if (chapterProgress?.completed) return 'completed';
     // All chapters are now unlocked and available
