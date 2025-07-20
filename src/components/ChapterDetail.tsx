@@ -55,18 +55,30 @@ const ChapterDetail: React.FC = () => {
   const isLastPage = currentPageIndex === chapter.pages.length - 1;
   const isFirstPage = currentPageIndex === 0;
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const handleNextPage = () => {
     if (currentPageIndex < chapter.pages.length - 1) {
       setCurrentPageIndex(currentPageIndex + 1);
+      scrollToTop();
     } else {
       setShowQuiz(true);
+      scrollToTop();
     }
   };
 
   const handlePrevPage = () => {
     if (currentPageIndex > 0) {
       setCurrentPageIndex(currentPageIndex - 1);
+      scrollToTop();
     }
+  };
+
+  const handlePageSelect = (pageIndex: number) => {
+    setCurrentPageIndex(pageIndex);
+    scrollToTop();
   };
 
   const handleCompleteChapter = () => {
@@ -80,7 +92,7 @@ const ChapterDetail: React.FC = () => {
       <div className="markdown-content" style={{ width: '100%', overflow: 'visible' }}>
         <ReactMarkdown
           components={{
-            h1: ({ children }) => <h1 style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)', fontWeight: '700', lineHeight: '1.3', marginBottom: '1.5rem', color: 'var(--color-black)' }}>{children}</h1>,
+            h1: ({ children }) => null, // Hide h1 since it's already in the header
             h2: ({ children }) => <h2 style={{ fontSize: '1.25rem', fontWeight: '600', marginTop: '2rem', marginBottom: '1rem', color: 'var(--color-black)' }}>{children}</h2>,
             h3: ({ children }) => <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginTop: '1.5rem', marginBottom: '0.75rem', color: 'var(--color-black)' }}>{children}</h3>,
             p: ({ children }) => <p style={{ fontSize: '1.125rem', fontWeight: '400', lineHeight: '1.7', color: 'var(--color-gray-600)', marginBottom: '1.5rem' }}>{children}</p>,
@@ -166,7 +178,7 @@ const ChapterDetail: React.FC = () => {
       {/* Header */}
       <div style={{ background: 'var(--gradient-primary)', padding: '2rem 0' }}>
         <div className="container">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
             <Link 
               to="/chapters" 
               className="btn-secondary"
@@ -182,15 +194,84 @@ const ChapterDetail: React.FC = () => {
             >
               <ArrowLeft size={16} />
             </Link>
-            <span style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.875rem', fontWeight: '500' }}>
-              Chương {currentIndex + 1} / {chapters.length}
-            </span>
+            
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+              <button 
+                onClick={handlePrevPage}
+                disabled={isFirstPage}
+                style={{ 
+                  opacity: isFirstPage ? 0.3 : 1,
+                  background: 'rgba(255, 255, 255, 0.2)',
+                  color: 'white',
+                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                  padding: '0.5rem',
+                  borderRadius: '0.5rem',
+                  cursor: isFirstPage ? 'not-allowed' : 'pointer',
+                  backdropFilter: 'blur(10px)',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                <ChevronLeft size={14} />
+              </button>
+
+              <span style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.875rem', fontWeight: '500' }}>
+                Chương {currentIndex + 1} / {chapters.length}
+              </span>
+
+              {/* Page Dots - Hidden on small screens */}
+              <div style={{ 
+                display: 'flex', 
+                gap: '0.4rem', 
+                alignItems: 'center'
+              }}>
+                {chapter.pages.slice(0, window.innerWidth < 768 ? 5 : chapter.pages.length).map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => handlePageSelect(index)}
+                    style={{
+                      width: '6px',
+                      height: '6px',
+                      borderRadius: '50%',
+                      border: 'none',
+                      background: index === currentPageIndex 
+                        ? 'white' 
+                        : 'rgba(255, 255, 255, 0.4)',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s ease',
+                      transform: index === currentPageIndex ? 'scale(1.3)' : 'scale(1)',
+                      boxShadow: index === currentPageIndex ? '0 2px 8px rgba(255, 255, 255, 0.5)' : 'none',
+                      display: window.innerWidth < 480 ? 'none' : 'block'
+                    }}
+                  />
+                ))}
+                {chapter.pages.length > 5 && window.innerWidth < 768 && (
+                  <span style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '0.75rem' }}>...</span>
+                )}
+              </div>
+
+              <button 
+                onClick={handleNextPage}
+                style={{ 
+                  background: 'rgba(255, 255, 255, 0.2)',
+                  color: 'white',
+                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                  padding: '0.5rem',
+                  borderRadius: '0.5rem',
+                  cursor: 'pointer',
+                  backdropFilter: 'blur(10px)',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                <ChevronRight size={14} />
+              </button>
+            </div>
           </div>
           
           <h1 className="hero-text" style={{ marginBottom: '0.5rem', color: 'white', fontSize: 'clamp(1.25rem, 2.5vw, 1.5rem)', lineHeight: '1.3' }}>
             {currentPage ? currentPage.title || `Trang ${currentPageIndex + 1}` : chapter.title}
           </h1>
           
+
 
           {/* Page Progress */}
           <div style={{ 
@@ -241,89 +322,76 @@ const ChapterDetail: React.FC = () => {
               }}>
                 <div style={{ 
                   display: 'flex', 
-                  justifyContent: 'space-between', 
+                  justifyContent: 'center',
                   alignItems: 'center', 
                   background: 'white', 
-                  padding: 'clamp(1rem, 3vw, 2rem)', 
+                  padding: '1rem 2rem', 
                   borderRadius: '1rem', 
                   boxShadow: '0 4px 16px rgba(0, 0, 0, 0.1)',
-                  flexWrap: 'wrap',
                   gap: '1rem'
                 }}>
                   <button 
-                    className="btn-secondary"
                     onClick={handlePrevPage}
                     disabled={isFirstPage}
                     style={{ 
                       opacity: isFirstPage ? 0.5 : 1,
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '0.5rem',
                       background: isFirstPage ? 'var(--color-gray-200)' : 'var(--color-gray-100)',
                       color: isFirstPage ? 'var(--color-gray-400)' : 'var(--color-gray-700)',
-                      border: '2px solid var(--color-gray-300)',
-                      padding: 'clamp(0.75rem, 2vw, 1rem) clamp(1rem, 3vw, 1.5rem)',
-                      borderRadius: '0.75rem',
-                      fontWeight: '500',
+                      border: '1px solid var(--color-gray-300)',
+                      padding: '0.5rem',
+                      borderRadius: '0.5rem',
                       transition: 'all 0.3s ease',
-                      fontSize: 'clamp(0.875rem, 2vw, 1rem)',
-                      order: '1'
+                      cursor: isFirstPage ? 'not-allowed' : 'pointer'
                     }}
                   >
                     <ChevronLeft size={16} />
-                    Trang trước
                   </button>
 
-                  {/* Page Indicators */}
+                  {/* Page Indicators - Responsive */}
                   <div style={{ 
                     display: 'flex', 
-                    gap: 'clamp(0.5rem, 1vw, 0.75rem)', 
+                    gap: '0.5rem', 
                     alignItems: 'center',
-                    justifyContent: 'center',
-                    order: '2',
-                    flexShrink: '0'
+                    justifyContent: 'center'
                   }}>
-                    {chapter.pages.map((_, index) => (
+                    {chapter.pages.slice(0, window.innerWidth < 768 ? 5 : chapter.pages.length).map((_, index) => (
                       <button
                         key={index}
-                        onClick={() => setCurrentPageIndex(index)}
+                        onClick={() => handlePageSelect(index)}
                         style={{
-                          width: '16px',
-                          height: '16px',
+                          width: '8px',
+                          height: '8px',
                           borderRadius: '50%',
-                          border: index === currentPageIndex ? '2px solid var(--color-purple)' : 'none',
+                          border: 'none',
                           background: index === currentPageIndex 
                             ? 'var(--gradient-progress)' 
                             : 'var(--color-gray-300)',
                           cursor: 'pointer',
                           transition: 'all 0.3s ease',
                           transform: index === currentPageIndex ? 'scale(1.2)' : 'scale(1)',
-                          boxShadow: index === currentPageIndex ? '0 4px 12px rgba(139, 92, 246, 0.3)' : 'none'
+                          boxShadow: index === currentPageIndex ? '0 2px 8px rgba(139, 92, 246, 0.3)' : 'none',
+                          display: window.innerWidth < 480 ? 'none' : 'block'
                         }}
                       />
                     ))}
+                    {chapter.pages.length > 5 && window.innerWidth < 768 && window.innerWidth >= 480 && (
+                      <span style={{ color: 'var(--color-gray-500)', fontSize: '0.75rem' }}>...</span>
+                    )}
                   </div>
 
                   <button 
-                    className="btn-primary"
                     onClick={handleNextPage}
                     style={{ 
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '0.5rem',
                       background: 'var(--gradient-progress)',
                       color: 'white',
                       border: 'none',
-                      padding: 'clamp(0.75rem, 2vw, 1rem) clamp(1rem, 3vw, 1.5rem)',
-                      borderRadius: '0.75rem',
-                      fontWeight: '600',
-                      boxShadow: '0 4px 16px rgba(139, 92, 246, 0.3)',
+                      padding: '0.5rem',
+                      borderRadius: '0.5rem',
+                      boxShadow: '0 2px 8px rgba(139, 92, 246, 0.3)',
                       transition: 'all 0.3s ease',
-                      fontSize: 'clamp(0.875rem, 2vw, 1rem)',
-                      order: '3'
+                      cursor: 'pointer'
                     }}
                   >
-                    {isLastPage ? 'Làm bài Quiz' : 'Trang tiếp theo'}
                     <ChevronRight size={16} />
                   </button>
                 </div>
@@ -331,49 +399,6 @@ const ChapterDetail: React.FC = () => {
             </div>
           </div>
 
-          {/* Chapter Navigation */}
-          {isLastPage && !showQuiz && (
-            <div style={{ background: 'white', borderTop: '1px solid var(--color-gray-300)', padding: '2rem 0' }}>
-              <div className="container">
-                <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    {prevChapter ? (
-                      <Link 
-                        to={`/chapters/${prevChapter.id}`}
-                        className="btn-secondary"
-                        style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
-                      >
-                        <ArrowLeft size={16} />
-                        Chương trước
-                      </Link>
-                    ) : (
-                      <div />
-                    )}
-                    
-                    {nextChapter ? (
-                      <Link 
-                        to={`/chapters/${nextChapter.id}`}
-                        className="btn-primary"
-                        style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
-                      >
-                        Chương tiếp theo
-                        <ArrowRight size={16} />
-                      </Link>
-                    ) : (
-                      <button 
-                        className="btn-primary"
-                        onClick={handleCompleteChapter}
-                        style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
-                      >
-                        Hoàn thành khóa học
-                        <CheckCircle size={16} />
-                      </button>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
         </>
       ) : (
         <QuizComponent chapter={chapter} onComplete={() => setShowQuiz(false)} />

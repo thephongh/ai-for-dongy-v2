@@ -1,12 +1,13 @@
-# AI Training Course for Traditional Medicine Practitioners
+# AI for Dongy v2 - Course Platform for Traditional Medicine Practitioners
 
-An interactive web application built with React and TypeScript that provides comprehensive AI training specifically designed for traditional medicine practitioners (lương y).
+An interactive web application built with React and TypeScript that provides comprehensive AI training specifically designed for traditional Vietnamese medicine practitioners (lương y).
 
 ## 🎯 Features
 
 - **6 Comprehensive Chapters**: From AI basics to advanced practical applications
-- **Interactive Quizzes**: Test knowledge with timed quizzes after each chapter
-- **Beautiful Design System**: Implements the provided design requirements with gradients and modern UI
+- **Markdown-Based Content**: Easy-to-edit course content stored in markdown files
+- **Interactive Quizzes**: JSON-configured quizzes with timed questions after each chapter
+- **Beautiful Design System**: Modern UI with gradients, glowing effects, and harmony bridge background
 - **Progress Tracking**: Visual progress indicators and completion status
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 - **Vietnamese Content**: Fully localized content in Vietnamese
@@ -15,8 +16,8 @@ An interactive web application built with React and TypeScript that provides com
 
 1. **Chapter 1**: Khai Mở Tư Duy - AI và Y Học Cổ Truyền
 2. **Chapter 2**: Giải Mã Ma Trận "Bộ Não" AI - Đào tạo, Tư duy và Giao tiếp
-3. **Chapter 3**: Nghệ Thuật Giao Tiếp với AI - Prompt Nâng Cao
-4. **Chapter 4**: AI Trợ Lý Toàn Năng - Ứng Dụng Lâm Sàng và Quản Lý
+3. **Chapter 3**: Nghệ Thuật Đối Thoại - Prompt Engineering và Kỹ Thuật Nâng Cao
+4. **Chapter 4**: Ứng Dụng Thực Tế - AI trong Chẩn Đoán và Điều Trị
 5. **Chapter 5**: Tinh Tường và An Toàn - Đạo Đức và Đánh Giá AI
 6. **Chapter 6**: Con Đường Phía Trước - Tích Hợp và Phát Triển
 
@@ -105,21 +106,100 @@ The app implements a comprehensive design system based on the provided requireme
 - Retry functionality
 - Progress persistence
 
-## 🔧 Customization
+## 📁 Project Structure
+
+```
+ai-for-dongy-v2/
+├── public/
+│   ├── courses/                    # Course content (markdown files)
+│   │   ├── chapter-1/
+│   │   │   ├── index.md           # Chapter overview
+│   │   │   ├── page-1.md          # Individual pages
+│   │   │   ├── page-2.md
+│   │   │   └── quiz.json          # Quiz configuration
+│   │   └── chapter-6/
+│   └── images/                     # Course images
+│       ├── chapter-1/
+│       │   └── 1.1-harmony-bridge.jpg
+│       └── chapter-6/
+├── src/
+│   ├── components/                 # React components
+│   │   ├── HomePage.tsx           # Landing page with hero section
+│   │   ├── ChapterList.tsx        # Chapter navigation
+│   │   ├── ChapterDetail.tsx      # Chapter content viewer
+│   │   └── Navigation.tsx         # Main navigation
+│   ├── data/
+│   │   └── chapters.ts            # Chapter data configuration
+│   ├── styles/
+│   │   └── design-system.css      # Design system & CSS variables
+│   ├── types/
+│   │   └── course.ts              # TypeScript type definitions
+│   └── utils/
+│       ├── contentLoader.ts       # Markdown content loader
+│       └── contentSplitter.ts     # Content pagination utility
+└── README.md
+```
+
+## 📝 Content Management
+
+### Editing Course Content
+
+All course content is stored in markdown files under `public/courses/`. Each chapter has its own directory:
+
+#### Chapter Structure
+```
+public/courses/chapter-X/
+├── index.md           # Chapter overview and table of contents
+├── page-1.md          # Individual lesson pages
+├── page-2.md
+├── ...
+└── quiz.json          # Quiz questions and configuration
+```
+
+#### Editing Pages
+1. Navigate to `public/courses/chapter-X/`
+2. Edit any `.md` file with your preferred text editor
+3. Use standard markdown syntax
+4. Changes are reflected immediately in development mode
+
+#### Adding/Removing Images
+- **Safe to remove**: Delete entire image lines from markdown files
+- **No broken images**: Removing `![alt](path)` lines won't cause "missing image" icons
+- **Image location**: Store images in `public/images/chapter-X/`
+- **Reference format**: `![Alt text](../../images/chapter-X/image-name.jpg)`
+
+#### Quiz Configuration
+Edit `quiz.json` files to modify quiz questions:
+```json
+{
+  "id": "chapter-1-quiz",
+  "chapterId": "chapter-1",
+  "timeLimit": 20,
+  "passingScore": 75,
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Question text",
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "correctAnswer": 0,
+      "explanation": "Explanation text"
+    }
+  ]
+}
+```
 
 ### Adding New Chapters
-1. Add content to `src/data/chapters.ts`
-2. Include quiz questions in the same file
-3. The app will automatically include the new chapter
+1. **Create chapter directory**: `public/courses/chapter-X/`
+2. **Add content files**: `index.md`, `page-1.md`, etc.
+3. **Create quiz**: `quiz.json` with questions
+4. **Update chapter data**: Add to `src/data/chapters.ts` fallbackChapters array
+5. **Add images**: Store in `public/images/chapter-X/`
 
-### Modifying Design
-- Update CSS variables in `src/styles/design-system.css`
-- All colors, fonts, and spacing are centralized
-
-### Content Updates
-- Chapter content is written in Markdown
-- Quiz questions are configured in JSON format
-- All content is in Vietnamese
+### Design Customization
+- **CSS Variables**: Update `src/styles/design-system.css`
+- **Colors & Gradients**: Centralized in design system
+- **Typography**: Responsive with clamp() functions
+- **Components**: Modify individual component files in `src/components/`
 
 ## 📄 License
 

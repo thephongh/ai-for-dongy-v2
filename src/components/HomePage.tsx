@@ -44,7 +44,11 @@ const HomePage: React.FC = () => {
         }}
       >
         <div className="container" style={{ textAlign: 'center' }}>
-          <h1 className="hero-text" style={{ marginBottom: '1.5rem' }}>
+          <h1 className="hero-text" style={{ 
+            marginBottom: '1.5rem',
+            textShadow: '0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.4)',
+            filter: 'drop-shadow(0 0 10px rgba(255, 255, 255, 0.5))'
+          }}>
             Khóa Học AI cho Lương Y
           </h1>
           <p className="body-text" style={{ 

@@ -1,7 +1,5 @@
 # 4.8. Ứng dụng quản lý: Marketing và Kế hoạch
 
-![Marketing Strategy](/images/chapter-4/4.5-clinic-management.svg)
-
 ## 🎯 **Chuyển từ lâm sàng sang marketing hiệu quả**
 
 Sau khi đã thấy sức mạnh của AI trong chẩn đoán và điều trị, bây giờ hãy khám phá cách AI có thể giúp bạn phát triển phòng khám một cách chuyên nghiệp.
@@ -123,7 +121,7 @@ Mỗi câu trả lời 80-100 từ."
 ```
 "Hãy soạn câu trả lời cho tin nhắn sau:
 
-'Bác sĩ ơi, con tôi uống thuốc YHCT 1 tuần rồi mà chưa thấy khỏi, 
+'Bác sĩ ơi, con tôi uống thuốc YHCT 1 tuần rồi mà chưa thấy khỏi,
 có phải thuốc không hiệu quả? Tôi định chuyển sang Tây y.'
 
 YÊU CẦU:
@@ -141,12 +139,15 @@ Tông điệu: Thấu hiểu, chuyên nghiệp, khuyến khích."
 ## 📊 **Bài tập thực hành marketing**
 
 ### **Nhiệm vụ 1: Tạo content cho chuyên khoa của bạn**
+
 Sử dụng prompt để viết 3 bài đăng Facebook về chuyên khoa bạn đang hành nghề.
 
 ### **Nhiệm vụ 2: Lập kế hoạch tuần**
+
 Tạo kế hoạch content cho 1 tuần với 7 bài đăng khác nhau.
 
 ### **Nhiệm vụ 3: Viết email marketing**
+
 Tạo email gửi cho khách hàng cũ về dịch vụ chăm sóc sức khỏe mùa đông.
 
 ---
@@ -154,13 +155,15 @@ Tạo email gửi cho khách hàng cũ về dịch vụ chăm sóc sức khỏe 
 ## 🎯 **Tổng kết: Từ lương y đến entrepreneur**
 
 ### **AI đã giúp bạn:**
+
 ✅ Chẩn đoán và điều trị chính xác hơn  
 ✅ Tạo nội dung chuyên nghiệp  
 ✅ Quản lý mạng xã hội hiệu quả  
 ✅ Tương tác với bệnh nhân tốt hơn  
-✅ Xây dựng thương hiệu cá nhân mạnh mẽ  
+✅ Xây dựng thương hiệu cá nhân mạnh mẽ
 
 ### **Bước tiếp theo:**
+
 - Áp dụng ngay vào thực tế
 - Đo lường hiệu quả qua số liệu
 - Điều chỉnh strategy cho phù hợp
@@ -171,24 +174,21 @@ Tạo email gửi cho khách hàng cũ về dịch vụ chăm sóc sức khỏe 
 ## ⚠️ **Những điều cần nhớ**
 
 🔴 **Luôn tuân thủ quy định:**
+
 - Không chẩn đoán qua mạng
 - Không kê đơn trực tuyến
 - Tuân thủ quy định quảng cáo y tế
 
 🟡 **Bảo mật thông tin:**
+
 - Không chia sẻ thông tin bệnh nhân
 - Chỉ dùng case study có cho phép
 - Bảo vệ dữ liệu cá nhân tuyệt đối
 
 🟢 **Phát triển bền vững:**
+
 - Chất lượng điều trị luôn là ưu tiên
 - Marketing chỉ là công cụ hỗ trợ
 - Xây dựng uy tín lâu dài
 
 ---
-
-**⬅️ [Trước: AI phát triển phòng khám](./page-6.md) | [Tiếp: Chương 5 - Đạo đức và An toàn](../chapter-5/index.md) ➡️**
-
----
-
-> 💡 **Lưu ý quan trọng:** AI là công cụ mạnh mẽ nhưng sự chăm sóc tận tâm và chuyên môn vững chắc của lương y vẫn là nền tảng quan trọng nhất.
