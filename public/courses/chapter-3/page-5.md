@@ -1,5 +1,7 @@
 # Kỹ thuật 4: Tinh chỉnh lặp lại (Iterative Refinement)
 
+![RTF Foundation](../../images/chapter-3/3.1-rtf-foundation.jpg)
+
 ## 🔄 **Đừng mong có prompt hoàn hảo ngay lần đầu**
 
 ### 📝 **Quy trình 3 bước:**

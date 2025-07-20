@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Clock, ArrowRight, Play } from 'lucide-react';
-import { chapters } from '../data/chapters';
+import { loadChapters } from '../data/chapters';
+import type { Chapter } from '../types/course';
 
 const ChapterList: React.FC = () => {
+  const [chapters, setChapters] = useState<Chapter[]>([]);
+  const [loading, setLoading] = useState(true);
+  
   // Mock progress - in a real app, this would come from context/state management
   const progress = [
     { chapterId: 'chapter-1', completed: true, quizScore: 85, quizPassed: true },
@@ -13,6 +17,21 @@ const ChapterList: React.FC = () => {
     { chapterId: 'chapter-5', completed: false },
     { chapterId: 'chapter-6', completed: false },
   ];
+
+  useEffect(() => {
+    const loadContent = async () => {
+      try {
+        const loadedChapters = await loadChapters();
+        setChapters(loadedChapters);
+      } catch (error) {
+        console.error('Failed to load chapters:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    loadContent();
+  }, []);
 
   const getChapterStatus = (chapterId: string) => {
     const chapterProgress = progress.find(p => p.chapterId === chapterId);
@@ -24,6 +43,18 @@ const ChapterList: React.FC = () => {
   const durations = [
     '45 phút', '50 phút', '40 phút', '60 phút', '35 phút', '30 phút'
   ];
+
+  if (loading) {
+    return (
+      <div style={{ padding: '2rem 0', minHeight: '100vh' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <h1 className="h2-text">Đang tải khóa học...</h1>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div style={{ padding: '2rem 0', minHeight: '100vh' }}>

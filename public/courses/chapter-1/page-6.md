@@ -1,5 +1,7 @@
 # Tại sao Lương y cần quan tâm đến AI?
 
+![Human Touch](../../images/chapter-1/1.6-human-touch.jpg)
+
 > **AI không phải xu hướng - mà là cuộc cách mạng trong y học**
 
 ## 🚀 **Lợi ích thiết thực cho lương y:**

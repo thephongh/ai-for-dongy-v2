@@ -1,5 +1,7 @@
 # Ví dụ giải bài tập thực hành
 
+![Common Mistakes](../../images/chapter-3/3.9-common-mistakes.png)
+
 ## 📝 **Prompt mẫu hoàn chỉnh:**
 
 ```

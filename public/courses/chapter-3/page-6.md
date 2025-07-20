@@ -1,5 +1,7 @@
 # Thực hành: Xây dựng Prompt cho Case Study
 
+![Prompt Library](../../images/chapter-3/3.8-prompt-library.jpg)
+
 ## 📋 **Case Study:**
 **Bệnh nhân nam, 35 tuổi, lập trình viên, thường xuyên đau mỏi vai gáy, căng thẳng, khó ngủ.**
 
