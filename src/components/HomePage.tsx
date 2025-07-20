@@ -33,26 +33,40 @@ const HomePage: React.FC = () => {
     <div style={{ minHeight: '100vh' }}>
       {/* Hero Section */}
       <section 
-        className="gradient-primary" 
         style={{ 
           padding: '6rem 0', 
           color: 'white',
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/chapter-1/1.1-harmony-bridge.jpg)',
+          backgroundImage: 'url(/images/chapter-1/1.1-harmony-bridge.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
+          backgroundRepeat: 'no-repeat',
+          position: 'relative',
+          overflow: 'hidden'
         }}
       >
-        <div className="container" style={{ textAlign: 'center' }}>
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%)'
+        }}></div>
+        <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 2 }}>
           <h1 className="hero-text" style={{ 
             marginBottom: '1.5rem',
-            textShadow: '0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.4)',
-            filter: 'drop-shadow(0 0 10px rgba(255, 255, 255, 0.5))'
+            textShadow: '0 8px 32px rgba(0, 0, 0, 0.3), 0 0 40px rgba(255, 255, 255, 0.8), 0 0 60px rgba(255, 255, 255, 0.6), 0 0 80px rgba(255, 255, 255, 0.4)',
+            filter: 'drop-shadow(0 4px 20px rgba(255, 255, 255, 0.3))',
+            WebkitTextStroke: '1px rgba(255, 255, 255, 0.2)',
+            background: 'linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            animation: 'glow 3s ease-in-out infinite alternate'
           }}>
             Khóa Học AI cho Lương Y
           </h1>
-          <p className="body-text" style={{ 
-            fontSize: '1.25rem', 
+          <p className="body-large-text" style={{ 
             color: 'rgba(255, 255, 255, 0.9)', 
             marginBottom: '3rem',
             maxWidth: '600px',
@@ -113,7 +127,12 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Course Overview */}
-      <section style={{ padding: '6rem 0', background: 'var(--color-gray-100)' }}>
+      <section style={{ 
+        padding: '6rem 0', 
+        background: 'linear-gradient(135deg, rgba(249, 250, 251, 0.6) 0%, rgba(243, 244, 246, 0.4) 100%)',
+        backdropFilter: 'var(--blur-light)',
+        WebkitBackdropFilter: 'var(--blur-light)'
+      }}>
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <h2 className="h2-text" style={{ marginBottom: '1rem' }}>
@@ -159,7 +178,13 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="gradient-secondary" style={{ padding: '6rem 0', color: 'white' }}>
+      <section style={{ 
+        padding: '6rem 0', 
+        color: 'white',
+        background: 'var(--gradient-secondary)',
+        backdropFilter: 'var(--blur-light)',
+        WebkitBackdropFilter: 'var(--blur-light)'
+      }}>
         <div className="container" style={{ textAlign: 'center' }}>
           <h2 className="h2-text" style={{ color: 'white', marginBottom: '1rem' }}>
             Sẵn sàng bắt đầu hành trình?
