@@ -36,8 +36,8 @@ const ChapterList: React.FC = () => {
   const getChapterStatus = (chapterId: string) => {
     const chapterProgress = progress.find(p => p.chapterId === chapterId);
     if (chapterProgress?.completed) return 'completed';
-    if (chapterId === 'chapter-2') return 'current'; // Mock current chapter
-    return 'locked';
+    // All chapters are now unlocked and available
+    return 'current';
   };
 
   const durations = [
