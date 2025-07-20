@@ -54,15 +54,7 @@ const HomePage: React.FC = () => {
         }}></div>
         <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 2 }}>
           <h1 className="hero-text" style={{ 
-            marginBottom: '1.5rem',
-            textShadow: '0 8px 32px rgba(0, 0, 0, 0.3), 0 0 40px rgba(255, 255, 255, 0.8), 0 0 60px rgba(255, 255, 255, 0.6), 0 0 80px rgba(255, 255, 255, 0.4)',
-            filter: 'drop-shadow(0 4px 20px rgba(255, 255, 255, 0.3))',
-            WebkitTextStroke: '1px rgba(255, 255, 255, 0.2)',
-            background: 'linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-            animation: 'glow 3s ease-in-out infinite alternate'
+            marginBottom: '1.5rem'
           }}>
             Khóa Học AI cho Lương Y
           </h1>
