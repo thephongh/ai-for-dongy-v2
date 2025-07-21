@@ -1,90 +1,74 @@
-# Case Study 5: Ho Kéo Dài sau Cảm (Phế âm hư)
+# Case Study 4: Trứng Cá (Thấp nhiệt ở bì phu)
 
 ## 📋 **Tình huống:**
 
-Bệnh nhân nữ, 35 tuổi, giáo viên, ho khan kéo dài 3 tháng sau cảm lạnh, ho nhiều ban đêm và sáng sớm, ngực tức, khạc đờm ít, có khi có máu vân, mệt mỏi, lưỡi đỏ ít rêu.
+Bệnh nhân nam, 22 tuổi, sinh viên, da mặt và lưng nhiều mụn trứng cá, một số mụn có mủ, da dầu nhiều, hay thức khuya, ăn cay nóng, lưỡi đỏ rêu vàng.
 
-## 🌉 **Cầu nối Đông - Tây y:**
-
-### **Sức mạnh của AI trong kết nối tri thức:**
-
-AI có thể giúp bạn tìm ra mối liên hệ giữa chẩn đoán YHCT và y học hiện đại, tạo ra lý luận thuyết phục hơn cho bệnh nhân.
-
-## 💻 **Prompt tìm kiếm nghiên cứu hiện đại:**
+## 💻 **Câu lệnh Prompt cho so sánh bài thuốc:**
 
 ```
-"Hãy đóng vai một chuyên gia nghiên cứu y học kết hợp Đông - Tây.
+"Hãy đóng vai một lương y có 30 năm kinh nghiệm về da liễu YHCT.
+Tôi có bệnh nhân nam 22 tuổi với trứng cá viêm:
 
-Trường hợp: Ho kéo dài sau cảm, theo YHCT là Phế âm hư,
-theo Tây y có thể là hội chứng ho sau nhiễm kích ứng đường hô hấp.
+Triệu chứng: mụn mặt và lưng có mủ, da dầu, thức khuya, ăn cay,
+lưỡi đỏ rêu vàng.
 
-Yêu cầu:
-1. Giải thích cơ chế bệnh học theo cả hai hệ thống y học
-2. Tìm những điểm tương đồng giữa 'Phế âm hư' và
-   'Post-infectious cough syndrome'
-3. Đề xuất các nghiên cứu hiện đại nào có thể hỗ trợ
-   hiệu quả của liệu pháp YHCT
-4. Gợi ý từ khóa tiếng Anh để tìm kiếm nghiên cứu liên quan
+Hãy so sánh 3 bài thuốc phù hợp trong bảng sau:
 
-Trình bày một cách khoa học nhưng dễ hiểu."
+| Tiêu chí so sánh | Ngũ Vị Tiêu Độc Ẩm | Phòng Phong Thông Thánh Tán | Thanh Thượng Phòng Phong Thang |
+|------------------|---------------------|------------------------------|--------------------------------|
+| Chủ trị chính    |                     |                              |                                |
+| Cơ chế tác dụng  |                     |                              |                                |
+| Phù hợp khi nào  |                     |                              |                                |
+| Thành phần chính |                     |                              |                                |
+| Lưu ý sử dụng    |                     |                              |                                |
+
+Sau đó khuyến nghị bài thuốc tốt nhất cho ca này và lý do."
 ```
 
-## 🔬 **Tăng tính thuyết phục khoa học:**
+## 🎯 **Lợi ích của việc so sánh bằng bảng:**
 
-### **Lợi ích của cách tiếp cận này:**
+### **Trực quan và dễ hiểu:**
 
-📚 **Cập nhật kiến thức:**
+Thông tin được tổ chức một cách khoa học, giúp bạn nhanh chóng nhận ra điểm khác biệt giữa các phương án.
 
-- Luôn biết được nghiên cứu mới nhất về bệnh lý
-- Hiểu rõ cơ chế tác dụng của thảo dược theo khoa học hiện đại
-- Kết hợp được truyền thống và hiện đại
+### **Hỗ trợ ra quyết định:**
 
-🎯 **Thuyết phục bệnh nhân:**
+AI sẽ đưa ra khuyến nghị kèm lý do cụ thể, giúp bạn có thêm góc nhìn để đưa ra quyết định cuối cùng.
 
-- Bệnh nhân hiện đại thường cần lý giải khoa học
-- Tăng độ tin cậy vào phương pháp điều trị
-- Giúp bệnh nhân hiểu rõ hơn về tình trạng của mình
+### **Tăng tính chuyên nghiệp:**
 
-📈 **Nâng cao uy tín nghề nghiệp:**
+Bảng so sánh có thể được sử dụng để giải thích cho bệnh nhân hoặc thực tập sinh về lý do lựa chọn bài thuốc.
 
-- Cho thấy sự am hiểu về cả hai hệ thống y học
-- Tạo sự khác biệt so với những lương y khác
-- Xây dựng thương hiệu cá nhân chuyên nghiệp
+## 🌿 **Gợi ý phương pháp dùng ngoài:**
 
-## 🔍 **Prompt tìm hiểu cơ chế thảo dược:**
+### **Prompt bổ sung:**
 
 ```
-"Hãy phân tích cơ chế tác dụng của các vị thuốc chính
-trong điều trị ho kéo dài theo cả YHCT và y học hiện đại:
+"Ngoài uống thuốc, hãy gợi ý 3 phương pháp dùng ngoài từ thảo dược
+tự nhiên để hỗ trợ điều trị trứng cá:
 
-Vị thuốc cần phân tích: Bách hợp, Sa sâm, Mai môn đông,
-Ngũ vị tử, Cam thảo
+1. Công thức nước rửa mặt từ thảo dược
+2. Mặt nạ tự nhiên có thể làm tại nhà
+3. Nước xông hơi thảo dược
 
-Với mỗi vị thuốc, hãy nêu:
-1. Tính vị, quy kinh theo YHCT
-2. Thành phần hóa học chính (nếu có nghiên cứu)
-3. Cơ chế tác dụng được chứng minh
-4. Các nghiên cứu lâm sàng nổi bật (nếu có)
-
-Kết luận: Tại sao sự kết hợp này hiệu quả cho ho kéo dài?"
+Mỗi phương pháp nêu rõ: nguyên liệu, cách làm, tần suất sử dụng
+và cơ chế tác dụng theo YHCT."
 ```
 
-## 📊 **Ứng dụng thực tế:**
+## ⚗️ **Ứng dụng thực tế:**
 
-### **Tạo tài liệu giáo dục:**
+### **Kết hợp Đông - Tây:**
 
-- Soạn brochure giải thích bệnh lý cho bệnh nhân
-- Tạo presentation cho các buổi hội thảo chuyên môn
-- Viết bài báo kết hợp Đông - Tây y
+- AI có thể gợi ý cách kết hợp thảo dược với các phương pháp chăm sóc da hiện đại
+- Tạo ra kế hoạch điều trị toàn diện từ trong ra ngoài
 
-### **Cải thiện chất lượng khám:**
+### **Giáo dục bệnh nhân:**
 
-- Đưa ra lời giải thích thuyết phục hơn
-- Tăng sự tuân thủ điều trị của bệnh nhân
-- Giảm thời gian giải thích cho từng ca bệnh
+- Giải thích cơ chế bệnh theo YHCT một cách dễ hiểu
+- Cung cấp lời khuyên về chế độ ăn uống và sinh hoạt phù hợp
 
-### **Phát triển nghề nghiệp:**
+### **Theo dõi tiến triển:**
 
-- Trở thành lương y "bridge" giữa truyền thống và hiện đại
-- Tham gia các nghiên cứu liên ngành
-- Xây dựng network với các bác sĩ Tây y
+- Hướng dẫn bệnh nhân nhận biết dấu hiệu cải thiện
+- Khi nào cần điều chỉnh phương pháp điều trị

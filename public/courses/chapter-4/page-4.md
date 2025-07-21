@@ -1,74 +1,44 @@
-# Case Study 4: Trứng Cá (Thấp nhiệt ở bì phu)
+# Case Study 3: Rối Loạn Tiêu Hóa (Tỳ Vị hư hàn)
 
 ## 📋 **Tình huống:**
 
-Bệnh nhân nam, 22 tuổi, sinh viên, da mặt và lưng nhiều mụn trứng cá, một số mụn có mủ, da dầu nhiều, hay thức khuya, ăn cay nóng, lưỡi đỏ rêu vàng.
+Bệnh nhân nữ, 28 tuổi, nhân viên văn phòng, hay bị đầy bụng, khó tiêu sau khi ăn, ăn đồ lạnh vào là đau bụng đi ngoài, phân lỏng, người mệt mỏi, chân tay lạnh, sắc mặt nhợt nhạt.
 
-## 💻 **Câu lệnh Prompt cho so sánh bài thuốc:**
-
-```
-"Hãy đóng vai một lương y có 30 năm kinh nghiệm về da liễu YHCT.
-Tôi có bệnh nhân nam 22 tuổi với trứng cá viêm:
-
-Triệu chứng: mụn mặt và lưng có mủ, da dầu, thức khuya, ăn cay,
-lưỡi đỏ rêu vàng.
-
-Hãy so sánh 3 bài thuốc phù hợp trong bảng sau:
-
-| Tiêu chí so sánh | Ngũ Vị Tiêu Độc Ẩm | Phòng Phong Thông Thánh Tán | Thanh Thượng Phòng Phong Thang |
-|------------------|---------------------|------------------------------|--------------------------------|
-| Chủ trị chính    |                     |                              |                                |
-| Cơ chế tác dụng  |                     |                              |                                |
-| Phù hợp khi nào  |                     |                              |                                |
-| Thành phần chính |                     |                              |                                |
-| Lưu ý sử dụng    |                     |                              |                                |
-
-Sau đó khuyến nghị bài thuốc tốt nhất cho ca này và lý do."
-```
-
-## 🎯 **Lợi ích của việc so sánh bằng bảng:**
-
-### **Trực quan và dễ hiểu:**
-
-Thông tin được tổ chức một cách khoa học, giúp bạn nhanh chóng nhận ra điểm khác biệt giữa các phương án.
-
-### **Hỗ trợ ra quyết định:**
-
-AI sẽ đưa ra khuyến nghị kèm lý do cụ thể, giúp bạn có thêm góc nhìn để đưa ra quyết định cuối cùng.
-
-### **Tăng tính chuyên nghiệp:**
-
-Bảng so sánh có thể được sử dụng để giải thích cho bệnh nhân hoặc thực tập sinh về lý do lựa chọn bài thuốc.
-
-## 🌿 **Gợi ý phương pháp dùng ngoài:**
-
-### **Prompt bổ sung:**
+## 💻 **Prompt mẫu cho Rối loạn tiêu hóa:**
 
 ```
-"Ngoài uống thuốc, hãy gợi ý 3 phương pháp dùng ngoài từ thảo dược
-tự nhiên để hỗ trợ điều trị trứng cá:
+"Hãy đóng vai một chuyên gia dinh dưỡng kết hợp với lương y YHCT.
+Tôi có một bệnh nhân với tình trạng Tỳ Vị hư hàn:
 
-1. Công thức nước rửa mặt từ thảo dược
-2. Mặt nạ tự nhiên có thể làm tại nhà
-3. Nước xông hơi thảo dược
+- Nữ, 28 tuổi, nhân viên văn phòng
+- Triệu chứng: đầy bụng, khó tiêu, ăn lạnh đau bụng, phân lỏng
+- Thể trạng: mệt mỏi, chân tay lạnh, sắc mặt nhợt
 
-Mỗi phương pháp nêu rõ: nguyên liệu, cách làm, tần suất sử dụng
-và cơ chế tác dụng theo YHCT."
+Hãy tạo một thực đơn 7 ngày với các nguyên tắc:
+1. Thực phẩm ấm tính, dễ tiêu
+2. Tránh thực phẩm hàn tính
+3. Phù hợp với công việc bận rộn
+
+Trình bày dưới dạng bảng, có giải thích ngắn về lợi ích từng món."
 ```
 
-## ⚗️ **Ứng dụng thực tế:**
+## 🎯 **Phân tích lợi ích của AI:**
 
-### **Kết hợp Đông - Tây:**
+### **Chuyên môn hóa sâu:**
 
-- AI có thể gợi ý cách kết hợp thảo dược với các phương pháp chăm sóc da hiện đại
-- Tạo ra kế hoạch điều trị toàn diện từ trong ra ngoài
+AI có thể nhanh chóng tạo ra một thực đơn chi tiết, điều mà một lương y có thể không có đủ thời gian để làm trong một buổi khám.
 
-### **Giáo dục bệnh nhân:**
+### **Sáng tạo trong diễn đạt:**
 
-- Giải thích cơ chế bệnh theo YHCT một cách dễ hiểu
-- Cung cấp lời khuyên về chế độ ăn uống và sinh hoạt phù hợp
+AI rất giỏi trong việc tạo ra các phép ẩn dụ, so sánh (ví Tỳ Vị như bếp lửa) giúp bệnh nhân dễ hình dung và tuân thủ điều trị tốt hơn.
 
-### **Theo dõi tiến triển:**
+### **Tiết kiệm công sức:**
 
-- Hướng dẫn bệnh nhân nhận biết dấu hiệu cải thiện
-- Khi nào cần điều chỉnh phương pháp điều trị
+Thay vì tự mình tra cứu và lên thực đơn, bạn có thể có một bản nháp chất lượng chỉ trong vài giây, sau đó chỉnh sửa lại cho phù hợp.
+
+## 🌟 **Kết quả mong đợi:**
+
+- Thực đơn chi tiết 7 ngày
+- Giải thích rõ ràng cho bệnh nhân
+- Dễ áp dụng trong cuộc sống bận rộn
+- Phù hợp với nguyên lý YHCT
