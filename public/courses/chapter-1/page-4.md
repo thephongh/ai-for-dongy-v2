@@ -5,15 +5,15 @@
 ## **Quy mô Huấn luyện: Những con số Thực tế**
 
 ### 🔢 **Tham số (Parameters):**
+
 - Tưởng tượng đây là các "nơ-ron" thần kinh của AI
 - GPT-3 (OpenAI) có **175 tỷ tham số**
 - Các mô hình mới hơn như GPT-4 được cho là có **khoảng 1 nghìn tỷ tham số**
 
 ### 📊 **Dữ liệu (Data):**
+
 - Nguồn "dinh dưỡng" tri thức cho AI
 - LLM được "đọc" hàng trăm tỷ đến hàng nghìn tỷ từ (tokens)
-
-![Data Funnel](../../images/chapter-1/1.3.2-data-funnel-brain.jpg)
 
 ## **Nguồn Dữ liệu: AI "Ăn" gì để lớn khôn?**
 
