@@ -3,20 +3,12 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, Clock, ArrowRight, Play } from 'lucide-react';
 import { loadChapters } from '../data/chapters';
 import type { Chapter } from '../types/course';
+import { useProgress } from '../contexts/ProgressContext';
 
 const ChapterList: React.FC = () => {
   const [chapters, setChapters] = useState<Chapter[]>([]);
   const [loading, setLoading] = useState(true);
-  
-  // Mock progress - in a real app, this would come from context/state management
-  const progress = [
-    { chapterId: 'chapter-1', completed: true, quizScore: 85, quizPassed: true },
-    { chapterId: 'chapter-2', completed: false },
-    { chapterId: 'chapter-3', completed: false },
-    { chapterId: 'chapter-4', completed: false },
-    { chapterId: 'chapter-5', completed: false },
-    { chapterId: 'chapter-6', completed: false },
-  ];
+  const { progress, completedChaptersCount, currentChapter } = useProgress();
 
   useEffect(() => {
     const loadContent = async () => {
@@ -36,7 +28,8 @@ const ChapterList: React.FC = () => {
   const getChapterStatus = (chapterId: string): 'completed' | 'current' | 'locked' => {
     const chapterProgress = progress.find(p => p.chapterId === chapterId);
     if (chapterProgress?.completed) return 'completed';
-    // All chapters are now unlocked and available
+    if (chapterId === currentChapter) return 'current';
+    // All chapters are unlocked and available
     return 'current';
   };
 
@@ -82,7 +75,7 @@ const ChapterList: React.FC = () => {
                 borderRadius: '50%', 
                 background: 'var(--color-green)' 
               }}></div>
-              <span className="caption-text">Hoàn thành: 1/6</span>
+              <span className="caption-text">Hoàn thành: {completedChaptersCount}/6</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <div style={{ 
@@ -91,7 +84,7 @@ const ChapterList: React.FC = () => {
                 borderRadius: '50%', 
                 background: 'var(--color-yellow)' 
               }}></div>
-              <span className="caption-text">Đang học: Chương 2</span>
+              <span className="caption-text">Đang học: {currentChapter ? `Chương ${currentChapter.split('-')[1]}` : 'Chưa bắt đầu'}</span>
             </div>
           </div>
           <div style={{ 
@@ -103,7 +96,7 @@ const ChapterList: React.FC = () => {
             <div style={{ 
               background: 'var(--gradient-progress)', 
               height: '100%', 
-              width: '16.67%',
+              width: `${(completedChaptersCount / 6) * 100}%`,
               borderRadius: '10px'
             }}></div>
           </div>

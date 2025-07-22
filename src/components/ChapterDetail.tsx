@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, CheckCircle, ChevronLeft, ChevronRight } from 'l
 import { loadChapters } from '../data/chapters';
 import type { Chapter } from '../types/course';
 import ReactMarkdown from 'react-markdown';
+import { useProgress } from '../contexts/ProgressContext';
 
 const ChapterDetail: React.FC = () => {
   const { chapterId } = useParams<{ chapterId: string }>();
@@ -11,6 +12,7 @@ const ChapterDetail: React.FC = () => {
   const [showQuiz, setShowQuiz] = useState(false);
   const [chapters, setChapters] = useState<Chapter[]>([]);
   const [loading, setLoading] = useState(true);
+  const { getChapterProgress, markPageCompleted } = useProgress();
   
   useEffect(() => {
     const loadContent = async () => {
@@ -26,6 +28,16 @@ const ChapterDetail: React.FC = () => {
     
     loadContent();
   }, []);
+
+  // Separate effect to restore progress only on initial load
+  useEffect(() => {
+    if (chapterId && !loading) {
+      const chapterProgress = getChapterProgress(chapterId);
+      if (chapterProgress?.currentPage !== undefined) {
+        setCurrentPageIndex(chapterProgress.currentPage);
+      }
+    }
+  }, [chapterId, loading]); // Remove getChapterProgress from dependencies
   
   const chapter = chapters.find(c => c.id === chapterId);
   const currentIndex = chapters.findIndex(c => c.id === chapterId);
@@ -51,6 +63,7 @@ const ChapterDetail: React.FC = () => {
 
   const currentPage = chapter.pages[currentPageIndex];
   const isFirstPage = currentPageIndex === 0;
+  
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -58,9 +71,16 @@ const ChapterDetail: React.FC = () => {
 
   const handleNextPage = () => {
     if (currentPageIndex < chapter.pages.length - 1) {
-      setCurrentPageIndex(currentPageIndex + 1);
+      const nextIndex = currentPageIndex + 1;
+      setCurrentPageIndex(nextIndex);
+      if (chapterId) {
+        markPageCompleted(chapterId, currentPageIndex);
+      }
       scrollToTop();
     } else {
+      if (chapterId) {
+        markPageCompleted(chapterId, currentPageIndex);
+      }
       setShowQuiz(true);
       scrollToTop();
     }
@@ -74,6 +94,9 @@ const ChapterDetail: React.FC = () => {
   };
 
   const handlePageSelect = (pageIndex: number) => {
+    if (pageIndex > 0 && chapterId) {
+      markPageCompleted(chapterId, currentPageIndex);
+    }
     setCurrentPageIndex(pageIndex);
     scrollToTop();
   };
@@ -218,7 +241,7 @@ const ChapterDetail: React.FC = () => {
                 gap: '0.4rem', 
                 alignItems: 'center'
               }}>
-                {chapter.pages.slice(0, window.innerWidth < 768 ? 5 : chapter.pages.length).map((_, index) => (
+                {chapter.pages.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => handlePageSelect(index)}
@@ -234,12 +257,12 @@ const ChapterDetail: React.FC = () => {
                       transition: 'all 0.2s ease',
                       transform: index === currentPageIndex ? 'scale(1.3)' : 'scale(1)',
                       boxShadow: index === currentPageIndex ? '0 2px 8px rgba(255, 255, 255, 0.5)' : 'none',
-                      display: window.innerWidth < 480 ? 'none' : 'block'
+                      display: index > 4 && chapter.pages.length > 5 ? 'none' : 'block'
                     }}
                   />
                 ))}
-                {chapter.pages.length > 5 && window.innerWidth < 768 && (
-                  <span style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '0.75rem' }}>...</span>
+                {chapter.pages.length > 5 && (
+                  <span style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '0.75rem', display: 'none' }}>...</span>
                 )}
               </div>
 
@@ -348,7 +371,7 @@ const ChapterDetail: React.FC = () => {
                     alignItems: 'center',
                     justifyContent: 'center'
                   }}>
-                    {chapter.pages.slice(0, window.innerWidth < 768 ? 5 : chapter.pages.length).map((_, index) => (
+                    {chapter.pages.map((_, index) => (
                       <button
                         key={index}
                         onClick={() => handlePageSelect(index)}
@@ -363,14 +386,10 @@ const ChapterDetail: React.FC = () => {
                           cursor: 'pointer',
                           transition: 'all 0.3s ease',
                           transform: index === currentPageIndex ? 'scale(1.2)' : 'scale(1)',
-                          boxShadow: index === currentPageIndex ? '0 2px 8px rgba(139, 92, 246, 0.3)' : 'none',
-                          display: window.innerWidth < 480 ? 'none' : 'block'
+                          boxShadow: index === currentPageIndex ? '0 2px 8px rgba(139, 92, 246, 0.3)' : 'none'
                         }}
                       />
                     ))}
-                    {chapter.pages.length > 5 && window.innerWidth < 768 && window.innerWidth >= 480 && (
-                      <span style={{ color: 'var(--color-gray-500)', fontSize: '0.75rem' }}>...</span>
-                    )}
                   </div>
 
                   <button 
@@ -395,25 +414,68 @@ const ChapterDetail: React.FC = () => {
 
         </>
       ) : (
-        <QuizComponent chapter={chapter} onComplete={() => setShowQuiz(false)} />
+        chapter.quiz ? (
+          <QuizComponent chapter={chapter} chapterId={chapterId || ''} onComplete={() => setShowQuiz(false)} />
+        ) : (
+          <div className="container" style={{ padding: '3rem 0', textAlign: 'center' }}>
+            <h2 className="h2-text">Quiz không khả dụng</h2>
+            <button className="btn-primary" onClick={() => setShowQuiz(false)} style={{ marginTop: '1rem' }}>
+              Quay lại nội dung
+            </button>
+          </div>
+        )
       )}
     </div>
   );
 };
 
 // Quiz Component
-const QuizComponent: React.FC<{ chapter: any; onComplete: () => void }> = ({ chapter, onComplete }) => {
+const QuizComponent: React.FC<{ chapter: any; chapterId: string; onComplete: () => void }> = ({ chapter, chapterId, onComplete }) => {
+  const { completeQuiz } = useProgress();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
   const [showResults, setShowResults] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(chapter.quiz.timeLimit * 60); // Convert to seconds
+  const [timeLeft, setTimeLeft] = useState(chapter.quiz?.timeLimit ? chapter.quiz.timeLimit * 60 : 600); // Convert to seconds with fallback
+
+  // Early return if quiz data is missing
+  if (!chapter.quiz || !chapter.quiz.questions || chapter.quiz.questions.length === 0) {
+    return (
+      <div className="container" style={{ padding: '3rem 0', textAlign: 'center' }}>
+        <h2 className="h2-text">Quiz không khả dụng</h2>
+        <p className="body-text">Không tìm thấy câu hỏi quiz cho chương này.</p>
+        <button className="btn-primary" onClick={onComplete} style={{ marginTop: '1rem' }}>
+          Quay lại nội dung
+        </button>
+      </div>
+    );
+  }
+
+  const calculateScore = React.useCallback(() => {
+    if (!chapter.quiz?.questions) return 0;
+    let correct = 0;
+    chapter.quiz.questions.forEach((question: any, index: number) => {
+      if (answers[index] === question.correctAnswer) {
+        correct++;
+      }
+    });
+    return Math.round((correct / chapter.quiz.questions.length) * 100);
+  }, [answers, chapter.quiz]);
+
+  const handleSubmitQuiz = React.useCallback(() => {
+    const score = calculateScore();
+    completeQuiz(chapterId, score, chapter.quiz?.passingScore || 70);
+    setShowResults(true);
+  }, [calculateScore, completeQuiz, chapterId, chapter.quiz]);
 
   React.useEffect(() => {
+    if (timeLeft <= 0 && !showResults) {
+      handleSubmitQuiz();
+      return;
+    }
+
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
-        if (prev <= 0) {
-          clearInterval(timer);
-          handleSubmitQuiz();
+        if (prev <= 1) {
           return 0;
         }
         return prev - 1;
@@ -421,7 +483,7 @@ const QuizComponent: React.FC<{ chapter: any; onComplete: () => void }> = ({ cha
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [timeLeft, handleSubmitQuiz, showResults]);
 
   const handleAnswerSelect = (answer: string) => {
     const newAnswers = [...answers];
@@ -430,25 +492,13 @@ const QuizComponent: React.FC<{ chapter: any; onComplete: () => void }> = ({ cha
   };
 
   const handleNextQuestion = () => {
+    if (!chapter.quiz?.questions) return;
+    
     if (currentQuestion < chapter.quiz.questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       handleSubmitQuiz();
     }
-  };
-
-  const handleSubmitQuiz = () => {
-    setShowResults(true);
-  };
-
-  const calculateScore = () => {
-    let correct = 0;
-    chapter.quiz.questions.forEach((question: any, index: number) => {
-      if (answers[index] === question.correctAnswer) {
-        correct++;
-      }
-    });
-    return Math.round((correct / chapter.quiz.questions.length) * 100);
   };
 
   const formatTime = (seconds: number) => {
